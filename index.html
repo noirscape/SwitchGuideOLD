@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Switch Homebrew Guide</title>
+  <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="How to run homebrew on your Nintendo Switch">
+  <meta property="og:image" content="https://i.imgur.com/uSgRGt6.png">
+</head>
+
+<body>
+  <div class="container-content container-fluid">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1 class="mt-5 text-center h1-page-title">Switch Homebrew Guide</h1>
+        <div class="info-box">
+          If you need assistance, visit us on
+          <a class="a-table" target="_blank" href="https://discord.gg/C29hYvh">Discord</a>
+        </div>
+        <h3>What are we doing to run homebrew on the Switch?</h3>
+        <p>
+          This guide will boot you into a "custom firmware" using a combination of the RCM recovery mode, the hekate bootloader and Atmosphére CFW.
+          In addition, crash reports are cleared on boot using nx-dreport.
+          This has only been tested on firmwares 5.0.2 and 5.1.0, but theoretically should work on all firmware versions.
+          Unlike most current solutions, sleep mode and playing your legitimately purchased games work while booted into "CFW".
+          Certain applications may not work on certain firmware versions so YMMV.
+        </p>
+        <h3>What you will need.</h3>
+        <p>
+          <ul>
+            <li>A "first-generation" Switch. (All current Switch consoles will work)</li>
+            <li>A way to put your Switch into RCM. See <a href=https://xghostboyx.github.io/RCM-Guide/>this guide for more information.</a></li>
+            <li>A host PC running Windows, Linux, macOS or ChromeOS, or an Android device.</li>
+            <li>A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports)</li>
+            <li>If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.</li>
+            <li>A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update")</li>
+            <li>The latest zip of the <a href=https://github.com/T3CHNOLOG1C/Switch-Starterpack>Switch Homebrew starter pack</a>.</li>
+            <li>The latest zip of the <a href=https://github.com/T3CHNOLOG1C/NX-Bootkit>NX Homebrew boot kit</a>, Unless you are using ChromeOS or Android.</li>
+            <li>Some platform-specific dependencies, listed for each supported OS.</li>
+          </ul>
+        </p>
+        <h3>What are the advantages to running homebrew?</h3>
+        <p>
+          Running homebrew will allow you to run tools such as <a href=https://github.com/BernardoGiordano/Checkpoint>Checkpoint, a save manager.</a>
+          You also can run emulators like RetroArch to play retro games on the Switch.
+          In addition, you can run homebrew games such as <a href=https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481>tetriswitch</a> and <a href=https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong/>Pong</a>.
+        </p>
+        <hr>
+        <h3>Getting Started</h3>
+        <ul>
+          <li>
+            <a class="a-table" href="#windows">Windows</a>
+          </li>
+          <li>
+            <a class="a-table" href="#maclinux">macOS/Linux</a>
+          </li>
+          <li>
+            <a class="a-table" href="#chromeOS">Chrome OS</a>
+          </li>
+          <li>
+            <a class="a-table" href="#android">Android</a>
+          </li>
+        </ul>
+        <hr>
+        <h2 id="windows">Getting Started (Windows)</h2>
+        <p>
+          <h5>Setting up your "CFW" boot method</h5>
+          <ol>
+            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
+            <li>Extract the NX Homebrew boot kit to a folder on your computer.</li>
+            <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
+            <li>Download the latest version of <a href=http://zadig.akeo.ie/downloads/>Zadig</a> and run it with the appropriate permissions.</li>
+            <li>From the device list, choose "APX" (if it's not showing up in the list, go to Options menu and check List All Devices).</li>
+            <li>For the driver type, use the arrows to navigate until you see "libusbK (v3.0.7.0)".</li>
+            <li>Click the big "Install Driver" button. Device Manager should now list "APX" under the "libusbK USB Devices" tree item.</li>
+          </ol>
+          <h5>Booting "CFW"</h5>
+          <ol>
+            <li>Depending on your processor architecture (32-bit or 64-bit), run the relevant "boot_cfw_Win*.bat"</li>
+            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
+            <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
+          </ol>
+        </p>
+        <hr>
+        <h2 id="maclinux">Getting Started (macOS/Linux)</h2>
+        <p>
+          <h5>Setting up your "CFW" boot method</h5>
+          <ol>
+            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
+            <li>Extract the NX Homebrew boot kit to a folder on your computer.</li>
+            <li>Ensure you have <a href="http://docs.python-guide.org/en/latest/starting/installation/">python3 installed</a>.</li>
+            <li>Ensure you have <a href="https://github.com/pyusb/pyusb">pyusb installed</a>.</li>
+            <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
+          </ol>
+          <h5>Booting "CFW"</h5>
+          <ol>
+            <li>Run the "boot_macOS-Linux.sh" script included in the NX Homebrew boot kit.</li>
+            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
+            <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
+          </ol>
+        </p>
+        <hr>
+        <h2 id="chromeOS">Getting Started (Chrome OS)</h2>
+        <p>
+          <h5>Setting up your "CFW" boot method</h5>
+          <ol>
+            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
+            <li>Download the latest release of <a href="https://github.com/CTCaer/hekate/releases">CTCaer's hekate fork</a>, you only need the .bin file, as the SD files are included in the starter pack.</li>
+          </ol>
+          <h5>Booting "CFW"</h5>
+          <ol>
+            <li>Go to <a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">this website</a>.</li>
+            <li>Under the Payload section, select upload payload and upload the .bin file you previously downloaded.</li>
+            <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
+            <li>Click "do the thing", select "APX" and click connect.</li>
+            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
+            <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
+          </ol>
+        </p>
+        <hr>
+        <h2 id="android">Getting Started (Android)</h2>
+        <p>
+          <h5>Setting up your "CFW" boot method</h5>
+          <ol>
+            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
+            <li>Enable unknown sources in the security settings on your device.</li>
+            <li>Download the latest release of <a href="https://github.com/DavidBuchanan314/NXLoader/releases">NXLoader</a> and install it on your device.</li>
+            <li>Download the latest release of <a href="https://github.com/CTCaer/hekate/releases">CTCaer's hekate fork</a>, you only need the .bin file, as the SD files are included in the starter pack.</li>
+            <li>Open the NXLoader app on your device and navigate to the "CONFIG" tab.</li>
+            <li>Click "SELECT PRIMARY PAYLOAD" and select the .bin file you downloaded earlier.</li>
+          </ol>
+          <h5>Booting "CFW"</h5>
+          <ol>
+            <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
+            <li>Accept any prompts given by NXLoader.</li>
+            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW".</li>
+            <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
+          </ol>
+        </p>
+          <hr>
+          <h2>Credits</h2>
+          <ul>
+            <li>T3CHNOLOG1C (writing)</li>
+            <li>BrianGilbert (macOS & Linux instructions)</li>
+            <li>xGhostBoyx (website base & RCM guide)</li>
+            <li>The original authors of all used tools</li>
+            <li>Plailect for inspiring me to write hacking guides</li>
+          </ul>
+          <hr>
+        </p>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
