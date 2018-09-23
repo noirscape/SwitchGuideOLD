@@ -46,7 +46,7 @@
         <p>
           <ul>
             <li><strong>Hekate</strong>: A bootloader for the Nintendo Switch.</li>
-            <li><strong>Atmosphére</strong>: The CFW made by ReSwitched.</li>
+            <li><strong>Atmosphére</strong>: The CFW made by the Atmosphere-NX org.</li>
             <li><strong>CFW</strong>: A Custom Firmware. Custom Firmware permits access to homebrew on the Nintendo Switch.</li>            
             <li><strong>RCM</strong>: A special mode of the Nintendo Switch's Tegra RCM chip that thanks to a bug allows us to push any payload to it. This exploit is known as ShofEL2 or fusee-gelee.</li>
           </ul>
@@ -89,39 +89,36 @@
         <hr>
         <h3>Making your bootkit</h3>
         <div class="info-box">
-          For the following steps, when making folders and renaming files, do not make or rename them with the quotes.
-        </div>
-        <div class="info-box">
           You will not have to create this bootkit if you are running Android or ChromeOS.<br>
           
           <a class="a-table" href="#android-chrome-prep">Continue to OS-Specific preparations if you use Android or chromeOS.</a>
         </div>
         <div class="info-box">
-            You will only have to create this bootkit once. When an update for hekate releases, generate a new zip file on sdsetup.com (using the URL provided to you from What You Will Need) and replace "payload.bin" with the file starting with "hekate_ctcaer" in the "payloads" folder (rename it to "payload.bin" and copy it to the "bin" folder).
+            You will only have to create this bootkit once. When an update for hekate releases, generate a new zip file on sdsetup.com (using the URL provided to you from What You Will Need) and replace <code>payload.bin</code> with the file starting with <code>hekate_ctcaer</code> in the <code>payloads</code> folder (rename it to <code>payload.bin</code> and copy it to the <code>bin</code> folder).
         </div>
         <p>
           <ol>
             <li>Extract the sdsetup.com zip to a folder.</li>
-            <li>Make a new folder called "bootkit".</li>
-            <li>In the bootkit folder, place "boot_cfw_win32.bat", "boot_cfw_win64.bat" and "boot_macOS-Linux.sh"</li>
-            <li>In the bootkit folder, make a folder called "bin".</li>
-            <li>In the "bin" folder, place "fusee-launcher.py" and "intermezzo.bin"</li>
-            <li>From the sdsetup.com zip, copy the following files to the "bin" folder:</li>
+            <li>Make a new folder called <code>bootkit</code>.</li>
+            <li>In the <code>bootkit</code> folder, place <code>boot_cfw_win32.bat</code>, <code>boot_cfw_win64.bat</code> and <code>boot_macOS-Linux.sh</code></li>
+            <li>In the <code>bootkit</code> folder, make a folder called <code>bin</code>.</li>
+            <li>In the <code>bin</code> folder, place <code>fusee-launcher.py</code> and <code>intermezzo.bin</code></li>
+            <li>From the sdsetup.com zip, copy the following files to the <code>bin</code> folder:</li>
             <ul>
-              <li>From the "pc" -> "tegrarcmsmash" folder copy both exes in the directories to the "bin" folder. Name the one from the Win32 folder "TegraRcmSmash_Win32" and the one in the x64 folder "TegraRcmSmash_Win64". (If you have file extensions enabled, make sure that they still end in .exe).
-              <li>From the "payloads" folder copy the file starting with "hekate_ctcaer" to the "bin" folder and rename it to "payload.bin"</li>
+              <li>From the <code>pc</code> -> <code>tegrarcmsmash</code> folder copy both exes in the directories to the <code>bin</code> folder. Name the one from the <code>Win32</code> folder <code>TegraRcmSmash_Win32</code> and the one in the <code>x64</code> folder <code>TegraRcmSmash_Win64</code>. (If you have file extensions enabled, make sure that they still end in .exe).
+              <li>From the <code>payloads</code> folder copy the file starting with <code>hekate_ctcaer</code> to the <code>bin</code> folder and rename it to <code>payload.bin</code></li>
               </ul>
           </ol>
         </p>
         <hr>
         <h3>Setting up your sd card</h3>
         <div class="info-box">
-            When Hekate updates, it is advised to replace all folders except for the "switch" and "Nintendo" folders with those from a newly generated zip from sdsetup.com (using the URL provided to you from What You Will Need).
+            When Hekate updates, it is advised to replace all folders except for the <code>switch</code> and <code>Nintendo</code> folders with those from a newly generated zip from sdsetup.com (using the URL provided to you from What You Will Need).
         </div>
         <p>
           <ol>
             <li>Turn off your Switch and put your microSD card in your computer.</li>
-            <li>Copy over all files in the "sd" folder from the sdsetup.com zip to the root of your Switch's microSD card.</li>
+            <li>Copy over all files in the <code>sd</code> folder from the sdsetup.com zip to the root of your Switch's microSD card.</li>
             <li>Safely remove your microSD card and plug it back in your Switch.</li>
           </ol>
         </p>
@@ -145,15 +142,15 @@
         <ol>
           <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
           <li>Download the latest version of <a class="a-table" href="http://zadig.akeo.ie/downloads" target="_blank"/>Zadig</a> and run it with the appropriate permissions.</li>
-          <li>From the device list, choose "APX" (if it's not showing up in the list, go to Options menu and check List All Devices).</li>
-          <li>For the driver type, use the arrows to navigate until you see "libusbK (v3.0.7.0)".</li>
-          <li>Click the big "Install Driver" button. Device Manager should now list "APX" under the "libusbK USB Devices" tree item.</li>
+          <li>From the device list, choose <code>APX</code> (if it's not showing up in the list, go to Options menu and check List All Devices).</li>
+          <li>For the driver type, use the arrows to navigate until you see <code>libusbK (v3.0.7.0)</code>.</li>
+          <li>Click the big <code>Install Driver</code> button. Device Manager should now list <code>APX</code> under the <code>libusbK USB Devices</code> tree item.</li>
         </ol>
         </h2>
         <h5 id="darwin-prep">OS-Specific preparations (macOS/Linux)</h2>
         <ol>
           <li>Ensure you have <a class="a-table" href="http://docs.python-guide.org/en/latest/starting/installation/" target="_blank">python3 installed</a>.</li>
-          <li>Ensure you have <a class="a-table" href="https://github.com/pyusb/pyusb"  target="_blank">pyusb installed</a>. (Open a terminal and run "sudo pip3 install pyusb" and enter your password when prompted).</li>
+          <li>Ensure you have <a class="a-table" href="https://github.com/pyusb/pyusb"  target="_blank">pyusb installed</a>. (Open a terminal and run <code>sudo pip3 install pyusb</code> and enter your password when prompted).</li>
         </ol>
         </h2>
         <h5 id="android-chrome-prep">OS-Specific preparations (Android/chromeOS)</h2>
@@ -184,7 +181,7 @@
         <p>
           <ol>
             <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
-            <li>Depending on your processor architecture (32-bit or 64-bit), run the relevant "boot_cfw_Win*.bat" in the bootkit folder</li>
+            <li>Depending on your processor architecture (32-bit or 64-bit), run the relevant <code>boot_cfw_Win*.bat</code> in the bootkit folder</li>
             <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
             <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
           </ol>
@@ -193,8 +190,8 @@
         <p>
           <ol>
             <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
-            <li>Run the "boot_macOS-Linux.sh" script included in the bootkit folder.</li>
-            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
+            <li>Run the <code>boot_macOS-Linux.sh</code> script included in the bootkit folder.</li>
+            <li>Once hekate loads, using the volume and power buttons, select <code>Launch firmware - > CFW</code></li>
             <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
           </ol>
         </p>
@@ -205,8 +202,8 @@
             <li>Go to <a class="a-table" href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html" target="_blank">this website</a>.</li>
             <li>Under the Payload section, select upload payload and upload the .bin file you previously downloaded.</li>
             <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
-            <li>Click "do the thing", select "APX" and click connect.</li>
-            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
+            <li>Click <code>do the thing</code>, select <code>APX</code> and click connect.</li>
+            <li>Once hekate loads, using the volume and power buttons, select <code>Launch firmware - > CFW</code></li>
             <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
           </ol>
         </p>
