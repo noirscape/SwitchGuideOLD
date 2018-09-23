@@ -3,13 +3,13 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120525173-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68539616-4"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-120525173-1');
+  gtag('config', 'UA-68539616-4');
   </script>
 
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
   <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
   <meta name="description" content="How to run homebrew on your Nintendo Switch">
-  <meta property="og:image" content="https://i.imgur.com/uSgRGt6.png">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/83742385e3de85014f348570720f2e31">
 </head>
 
 <body>
@@ -35,25 +35,48 @@
           If you need assistance, visit us on
           <a class="a-table" target="_blank" href="https://discord.gg/C29hYvh">Discord</a>
         </div>
+        <div class="alert alert-danger">
+          This guide uses sdsetup. sdsetup is used because it has the most up-to-date files. That said, sdsetup also allows generating SX OS/ReiNX setups. These are not supported by this guide and not supported on the previously linked Discord.<br>
+
+        </div>
+        <div class="alert alert-danger">
+          The Hekate bootmenu will reference a Discord server. This Discord server is not considered supported by this guide and not supported on the previously linked Discord. 
+        </div>
+        <h3>Terminology used in this guide</h3>
+        <p>
+          <ul>
+            <li><strong>Hekate</strong>: A bootloader for the Nintendo Switch.</li>
+            <li><strong>Atmosphére</strong>: The CFW made by ReSwitched.</li>
+            <li><strong>CFW</strong>: A Custom Firmware. Custom Firmware permits access to homebrew on the Nintendo Switch.</li>            
+            <li><strong>RCM recovery mode</strong>: A special mode of the Nintendo Switch's Tegra RCM chip that thanks to a bug allows us to push any payload to it. This exploit is known as ShofEL2 or fusee-gelee.</li>
+          </ul>
+        </p>
         <h3>What are we doing to run homebrew on the Switch?</h3>
         <p>
-          This guide will boot you into a "custom firmware" using a combination of the RCM recovery mode, the hekate bootloader and Atmosphére CFW.
-          In addition, crash reports are cleared on boot using nx-dreport.
-          This has only been tested on firmwares 5.0.2 and 5.1.0, but theoretically should work on all firmware versions.
-          Unlike most current solutions, sleep mode and playing your legitimately purchased games work while booted into "CFW".
+          This guide will boot you into Atmosphére using a combination of the RCM recovery mode, the Hekate bootloader and Atmosphére CFW.
+          In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon.
+          You will also be able to access the Homebrew menu by launching the album applet.
+          This has only been tested on firmwares 5.0.2 and 5.1.0 and 6.0.0, but theoretically should work on all firmware versions.
           Certain applications may not work on certain firmware versions so YMMV.
         </p>
         <h3>What you will need.</h3>
         <p>
           <ul>
-            <li>A "first-generation" Switch. (All current Switch consoles will work)</li>
-            <li>A way to put your Switch into RCM. See <a class="a-table" href="https://xghostboyx.github.io/RCM-Guide" target="_blank"/>this guide for more information.</a></li>
+            <li>A "first-generation" Switch. (All Switch consoles before July 2018 will work.)</li>
+            <li>A way to put your Switch into RCM. See <a class="a-table" href="https://xghostboyx.github.io/RCM-Guide" target="_blank">this guide for more information.</a></li>
             <li>A host PC running Windows, Linux, macOS or ChromeOS, or an Android device.</li>
             <li>A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports)</li>
             <li>If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.</li>
             <li>A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update")</li>
-            <li>The latest zip of the <a class="a-table" href="https://github.com/T3CHNOLOG1C/Switch-Starterpack" target="_blank">Switch Homebrew starter pack</a>.</li>
-            <li>The latest zip of the <a class="a-table" href="https://github.com/T3CHNOLOG1C/NX-Bootkit" target="_blank">NX Homebrew boot kit</a>, Unless you are using ChromeOS or Android.</li>
+            <li>A zip generated on <a class="a-table" href="https://www.sdsetup.com/console?switch#atmosphere;atmos_musthave;atmos_bootlogo;atmos_sysftpd;hbmenu;appstorenx;checkpoint;hekate;tegrarcmsmash;">sdsetup.com</a>. Scroll down and click "Download your zip". There is no need to modify any of the selected options.</li>
+            <li><a class="a-table" href="https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin">intermezzo.bin</a></li>
+            <li>The following files (use Ctrl-S or Apple key-S to save these):</li>
+              <ul>
+                <li><a class="a-table" href="https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py">fusee-launcher.py</a></li>
+                <li><a class="a-table" href="https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win32.bat">boot_cfw_win32.bat</a></li>
+                <li><a class="a-table" href="https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win64.bat">boot_cfw_win64.bat</a></li>
+                <li><a class="a-table" href="https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_macOS-Linux.sh">boot_macOS-Linux.sh</a></li>
+              </ul>
             <li>Some platform-specific dependencies, listed for each supported OS.</li>
           </ul>
         </p>
@@ -64,7 +87,85 @@
           In addition, you can run homebrew games such as <a class="a-table" href="https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481" target="_blank">tetriswitch</a> and <a class="a-table" href="https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong" target="_blank"/>Pong</a>.
         </p>
         <hr>
-        <h3>Getting Started</h3>
+        <h3>Making your bootkit</h3>
+        <div class="info-box">
+          For the following steps, when making folders and renaming files, do not make or rename them with the quotes.
+        </div>
+        <div class="info-box">
+          You will not have to create this bootkit if you are running Android or ChromeOS.<br>
+          
+          <a class="a-table" href="#android-chrome-prep">Continue to OS-Specific preparations if you use Android or chromeOS.</a>
+        </div>
+        <div class="info-box">
+            You will only have to create this bootkit once. When an update for hekate releases, generate a new zip file on sdsetup.com (using the URL provided to you from What You Will Need) and replace "payload.bin" with the file starting with "hekate_ctcaer" in the "payloads" folder (rename it to "payload.bin" and copy it to the "bin" folder).
+        </div>
+        <p>
+          <ol>
+            <li>Extract the sdsetup.com zip to a folder.</li>
+            <li>Make a new folder called "bootkit".</li>
+            <li>In the bootkit folder, place "boot_cfw_win32.bat", "boot_cfw_win64.bat" and "boot_macOS-Linux.sh"</li>
+            <li>In the bootkit folder, make a folder called "bin".</li>
+            <li>In the "bin" folder, place "fusee-launcher.py" and "intermezzo.bin"</li>
+            <li>From the sdsetup.com zip, copy the following files to the "bin" folder:</li>
+            <ul>
+              <li>From the "pc" -> "tegrarcmsmash" folder copy both exes in the directories to the "bin" folder. Name the one from the Win32 folder "TegraRcmSmash_Win32" and the one in the x64 folder "TegraRcmSmash_Win64". (If you have file extensions enabled, make sure that they still end in .exe).
+              <li>From the "payloads" folder copy the file starting with "hekate_ctcaer" to the "bin" folder and rename it to "payload.bin"</li>
+              </ul>
+          </ol>
+        </p>
+        <hr>
+        <h3>Setting up your sd card</h3>
+        <div class="info-box">
+            When Hekate updates, it is advised to replace all folders except for the "switch" and "Nintendo" folders with those from a newly generated zip from sdsetup.com (using the URL provided to you from What You Will Need).
+        </div>
+        <p>
+          <ol>
+            <li>Turn off your Switch and put your microSD card in your computer.</li>
+            <li>Copy over all files in the "sd" folder from the sdsetup.com zip to the root of your Switch's microSD card.</li>
+            <li>Safely remove your microSD card and plug it back in your Switch.</li>
+          </ol>
+        </p>
+        <hr>
+        <h3>OS-Specific preparations</h3>
+        <div class="info-box">
+          You will only have to do these steps once for each device you want to launch CFW from.
+        </div>
+        <ul>
+          <li>
+            <a class="a-table" href="#windows-prep">Windows</a>
+          </li>
+          <li>
+              <a class="a-table" href="#darwin-prep">macOS/Linux</a>
+            </li>
+          <li>
+             <a class="a-table" href="#android-chrome-prep">Android/chromeOS</a>
+          </li>
+        </ul>
+        <h5 id="windows-prep">OS-Specific preparations (Windows)</h2>
+        <ol>
+          <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
+          <li>Download the latest version of <a class="a-table" href="http://zadig.akeo.ie/downloads" target="_blank"/>Zadig</a> and run it with the appropriate permissions.</li>
+          <li>From the device list, choose "APX" (if it's not showing up in the list, go to Options menu and check List All Devices).</li>
+          <li>For the driver type, use the arrows to navigate until you see "libusbK (v3.0.7.0)".</li>
+          <li>Click the big "Install Driver" button. Device Manager should now list "APX" under the "libusbK USB Devices" tree item.</li>
+        </ol>
+        </h2>
+        <h5 id="darwin-prep">OS-Specific preparations (macOS/Linux)</h2>
+        <ol>
+          <li>Ensure you have <a class="a-table" href="http://docs.python-guide.org/en/latest/starting/installation/" target="_blank">python3 installed</a>.</li>
+          <li>Ensure you have <a class="a-table" href="https://github.com/pyusb/pyusb"  target="_blank">pyusb installed</a>. (Open a terminal and run "sudo pip3 install pyusb" and enter your password when prompted).</li>
+        </ol>
+        </h2>
+        <h5 id="android-chrome-prep">OS-Specific preparations (Android/chromeOS)</h2>
+        <ol>
+          <li>Download the latest release of <a class="a-table" href="https://github.com/CTCaer/hekate/releases" target="_blank">CTCaer's hekate fork</a>, and extract the .bin file.</li>
+          <li>Go to <a class="a-table" href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html" target="_blank">this website</a>.</li>
+        </ol>
+        <hr>
+        <h3>Launching CFW</h3>
+        <div class="info-box">
+            You will have to do these steps each time you want to boot into CFW.
+        </div>  
         <ul>
           <li>
             <a class="a-table" href="#windows">Windows</a>
@@ -79,54 +180,28 @@
             <a class="a-table" href="#android">Android</a>
           </li>
         </ul>
-        <hr>
-        <h2 id="windows">Getting Started (Windows)</h2>
+        <h5 id="windows">Launching CFW (Windows)</h2>
         <p>
-          <h5>Setting up your "CFW" boot method</h5>
           <ol>
-            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
-            <li>Extract the NX Homebrew boot kit to a folder on your computer.</li>
             <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
-            <li>Download the latest version of <a class="a-table" href="http://zadig.akeo.ie/downloads" target="_blank"/>Zadig</a> and run it with the appropriate permissions.</li>
-            <li>From the device list, choose "APX" (if it's not showing up in the list, go to Options menu and check List All Devices).</li>
-            <li>For the driver type, use the arrows to navigate until you see "libusbK (v3.0.7.0)".</li>
-            <li>Click the big "Install Driver" button. Device Manager should now list "APX" under the "libusbK USB Devices" tree item.</li>
-          </ol>
-          <h5>Booting "CFW"</h5>
-          <ol>
-            <li>Depending on your processor architecture (32-bit or 64-bit), run the relevant "boot_cfw_Win*.bat"</li>
+            <li>Depending on your processor architecture (32-bit or 64-bit), run the relevant "boot_cfw_Win*.bat" in the bootkit folder</li>
             <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
             <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
           </ol>
         </p>
-        <hr>
-        <h2 id="maclinux">Getting Started (macOS/Linux)</h2>
+        <h5 id="maclinux">Launching CFW (macOS/Linux)</h2>
         <p>
-          <h5>Setting up your "CFW" boot method</h5>
           <ol>
-            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
-            <li>Extract the NX Homebrew boot kit to a folder on your computer.</li>
-            <li>Ensure you have <a class="a-table" href="http://docs.python-guide.org/en/latest/starting/installation/" target="_blank">python3 installed</a>.</li>
-            <li>Ensure you have <a class="a-table" href="https://github.com/pyusb/pyusb"  target="_blank">pyusb installed</a>.</li>
             <li>Boot your Switch into RCM and connect it to your PC, see the guide linked above for more information on RCM.</li>
-          </ol>
-          <h5>Booting "CFW"</h5>
-          <ol>
-            <li>Run the "boot_macOS-Linux.sh" script included in the NX Homebrew boot kit.</li>
+            <li>Run the "boot_macOS-Linux.sh" script included in the bootkit folder.</li>
             <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW"</li>
             <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
           </ol>
         </p>
-        <hr>
-        <h2 id="chromeOS">Getting Started (Chrome OS)</h2>
+        <h5 id="chromeOS">Launching CFW (Chrome OS/Android)</h2>
         <p>
-          <h5>Setting up your "CFW" boot method</h5>
           <ol>
-            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
-            <li>Download the latest release of <a class="a-table" href="https://github.com/CTCaer/hekate/releases" target="_blank">CTCaer's hekate fork</a>, you only need the .bin file, as the SD files are included in the starter pack.</li>
-          </ol>
-          <h5>Booting "CFW"</h5>
-          <ol>
+            <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
             <li>Go to <a class="a-table" href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html" target="_blank">this website</a>.</li>
             <li>Under the Payload section, select upload payload and upload the .bin file you previously downloaded.</li>
             <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
@@ -136,36 +211,33 @@
           </ol>
         </p>
         <hr>
-        <h2 id="android">Getting Started (Android)</h2>
+        <h2>What next?</h2>
         <p>
-          <h5>Setting up your "CFW" boot method</h5>
-          <ol>
-            <li>Extract the files in the "sd_root" folder included in the Switch Homebrew starter pack zip to the root of your Switch's microSD card.</li>
-            <li>Enable unknown sources in the security settings on your device.</li>
-            <li>Download the latest release of <a class="a-table" href="https://github.com/DavidBuchanan314/NXLoader/releases" target="_blank">NXLoader</a> and install it on your device.</li>
-            <li>Download the latest release of <a class="a-table" href="https://github.com/CTCaer/hekate/releases" target="_blank">CTCaer's hekate fork</a>, you only need the .bin file, as the SD files are included in the starter pack.</li>
-            <li>Open the NXLoader app on your device and navigate to the "CONFIG" tab.</li>
-            <li>Click "SELECT PRIMARY PAYLOAD" and select the .bin file you downloaded earlier.</li>
-          </ol>
-          <h5>Booting "CFW"</h5>
-          <ol>
-            <li>Boot your Switch into RCM and connect it to your device, see the guide linked above for more information on RCM.</li>
-            <li>Accept any prompts given by NXLoader.</li>
-            <li>Once hekate loads, using the volume and power buttons, select "Launch firmware - > CFW".</li>
-            <li>Once your Switch boots, you can open the album applet to load the Homebrew Launcher.</li>
-          </ol>
-        </p>
-          <hr>
-          <h2>Credits</h2>
           <ul>
-            <li>T3CHNOLOG1C (writing)</li>
+            <li>You have now succesfully installed CFW on your Nintendo Switch.</li>
+            <li>You can manage save data using Checkpoint (by Flagbrew), a save manager that was included in this starting pack.</li>
+            <li>You can download new homebrew using hb App Store (also known as Appstore-NX, by vgmoose).</li>
+            <li>You can transfer files to your Switch over FTP using sys-ftpd (by jakibaki). No authentication is needed and the FTP server runs on port 5000.</li>
+            <li>You will probably want to create a NAND backup, in case you brick your Switch. You can do so from the Hekate menu.</li>
+            <li>When rebooting, your access to CFW will be lost, unless you follow the steps under Launching CFW again.</li>
+          </ul>
+        </p>
+        <h2>Credits</h2>
+        <p>
+          <ul>
+            <li>Valentijn "noirscape" V. (writing)</li>
+            <li>T3CHNOLOG1C (original guide, some parts of this are lifted from his. T3CHNOLOG1C also credits Plailect for inspiring him to make guides.)</li>
             <li>BrianGilbert (macOS & Linux instructions)</li>
             <li>xGhostBoyx (RCM guide)</li>
             <li>Jisagi (base layout)</li>
-            <li>The original authors of all used tools</li>
-            <li>Plailect for inspiring me to write hacking guides</li>
+            <li>The developers of all referenced tools and utilities.</li>
+            <li>The Nintendo Homebrew Discord (General support and patience when answering my questions.)</li>
           </ul>
           <hr>
+        </p>
+        <h2>Issues</h2>
+        <p>
+          Please report any issues with the guide on the <a class="a-table" href="https://github.com/noirscape/SwitchGuide/issues">Issue tracker</a>.
         </p>
       </div>
       <div class="col-lg-3"></div>
