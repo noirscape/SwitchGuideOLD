@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68539616-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68539616-4');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Switch Homebrew Guide</title>
+  <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="How to run homebrew on your Nintendo Switch">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/83742385e3de85014f348570720f2e31">
+</head>
+
+<body>
+  <div class="container-content container-fluid">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1 class="mt-5 text-center h1-page-title">Frequently Asked Questions</h1>
+        <p>
+          Below you will find a list of commonly asked questions and answers.
+        </p>
+        <h2>Table of Contents</h2>
+        <div class="info-box">
+            <a class="a-table" target="_blank" href="index.html">Click here to go back to the main guide.</a>
+        </div>  
+        <ul>
+          <li><a class="a-table" href="#rcm">RCM related</a></li>
+          <ul>
+            <li><a class="a-table" href="#not-bricked">My Switch shows no screen when turning on/"help I'm bricked"</a></li>
+            <li><a class="a-table" href="#not-zadig">When I connect my Switch to my computer, there is no APX device listed in Zadig!</a></li>
+          </ul>
+          <li><a class="a-table" href="#ban">Ban related</a></li>
+          <ul>
+            <li><a class="a-table" href="#prevent-ban">How do I prevent getting banned? What are some of the common causes for bans?</a></li>
+            <li><a class="a-table" href="#how-ban">How does Nintendo ban my system?</a></li>
+          </ul>
+          <li><a class="a-table" href="#homebrew">Homebrew related</a></li>
+          <ul>
+            <li><a class="a-table" href="#can-i-run-on">Does this guide work on system version x?</a></li>
+            <li><a class="a-table" href="#recommended-size">What is the recommended microSD card size for homebrew?</a></li>
+            <li><a class="a-table" href="#why-atmosphere-hekate">Why is only Atmosphere and Hekate supported? What about SX OS and ReiNX?</a></li>
+            <li><a class="a-table" href="#unreleased-atmo">I thought Atmosphere wasn't released yet?</a></li>
+            <li><a class="a-table" href="#sx-not-so-nand">You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?</a></li>
+            <li><a class="a-table" href="#nand-dump">Can I dump my NAND?</a></li>
+            <li><a class="a-table" href="#combine-nand-dump">I dumped my NAND, but I have partial NAND dumps. How can I make a full NAND dump out of these?</a></li>
+          </ul>
+        </ul>
+        <hr>
+        <h2 id="rcm">RCM related</h2>
+        <p>
+          <strong id="not-bricked">Q: My Switch shows no screen when turning on/"help I'm bricked"</strong><br>
+          A: You are not bricked. What this means is that your Switch has booted into RCM mode. Connect your Switch to a computer and follow the guide to start Hekate.
+        </p>
+        <!-- <p>
+          <strong id="empty-battery">Q: My Switch doesn't turn on anymore!</strong><br>
+          A: If your Switch's battery runs out while you are in RCM mode, it'll charge very slowly. Leave your Switch in the charger overnight to resolve this. If that doesn't work, you'll need to remove and reinsert the battery.
+        </p> -->
+        <p>
+          <strong id="not-zadig">Q: When I connect my Switch to my computer, there is no APX device listed in Zadig!</strong><br>
+          A: Make sure your Switch is in RCM before you connect it to your computer. If you see a device called "Nintendo Switch" in Zadig's list, you didn't connect your Switch in RCM. Close Zadig, unplug your Switch, put it in RCM, reconnect your switch and reopen Zadig.
+        </p>
+        <hr>
+        <h2 id="ban">Ban related</h2>
+        <p>
+          <strong id="prevent-ban">Q: How do I prevent getting banned? What are some of the common causes for bans?</strong><br>
+          A: Nintendo has been rather strict when it comes to banning homebrew systems. If you want to be safe, don't do any of the following:
+          <ul>
+            <li>Install pirated content/gamecart dumps.</li>
+            <li>Cheat or edit saves in games with online functionality.</li>
+            <li>Modifying your NAND.</li>
+            <li>Using your Switch's client cert to connect to the CDN in an unauthorized manner.</li>
+            <li>Using untested homebrew.</li>
+          </ul>
+
+          Note that the current setup given in the guide prevents you from doing the first bullet, 
+          as the given Atmosphere setup at the moment does not supply sigpatches, which are needed to install this type of content.
+          Finally, Atmosphere will in the future release "Thermosphere". Thermosphere is Atmospheres implementation of emuNAND.
+          This will result into being able to create an offline version of your NAND which you can use to safely test homebrew.
+        </p>
+        <p>
+          <strong id="how-ban">Q: How does Nintendo ban my system?</strong><br>
+          A: Depends on the context. By far the majority of bans are due to the Switch's error reporting and general telemetry (telemetry is Nintendo's collection of data).
+          If any of the collected data looks out of place to Nintendo, they can ban your system.<br>
+
+          Users in European regions should go <a class="a-table" target="_blank" href="https://accounts.nintendo.com/setting">here</a>, 
+          click on the "Edit" button next to usage information and untick both options and click "Save changes". While this will not fully disable telemetry, it will disable the majority of it.
+        </p>
+        <hr>
+        <h2 id="homebrew">Homebrew related</h2>
+        <p>
+          <strong id="can-i-run-on">Q: Does this guide work on 6.0?</strong><br>
+          A: This guide fully works on system version 6.0 and any version below.
+        </p>
+        <p>
+          <strong id="recommended-size">Q: What is the recommend microSD card size for homebrew?</strong><br>
+          A: The recommended size is 128GB. This will permit you to both have an emuNAND and allows you to make a full NAND dump without issue, while also leaving enough storage space for games and homebrew.
+        </p>
+        <p>
+          <strong id="why-atmosphere-hekate">Q: Why is only Atmosphere and Hekate supported? What about SX OS and ReiNX?</strong><br>
+          A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphere. ReiNX is unsupported due to being a fork of Atmosphere and any features that it offers over it are already included in Hekate. In addition, ReiNX and SX OS both have homebrew compatability issues with Atmosphere and Hekate which wont be supported.
+        </p>
+        <p>
+          <strong id="unreleased-atmo">Q: I thought Atmosphere wasn't released yet?</strong><br>
+          A: Atmosphere is almost finished for it's first stable release. It is already in a usable state and the majority of features that were required for the stable release are already implemented.
+        </p>
+        <p>
+          <strong id="sx-not-so-nand">Q: You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?</strong><br>
+          A: SX OS's emuNAND is not the same implementation as a "proper" emuNAND. SX OS's implementation instead clones the sysNAND, removes a lot of the unused space and stores it as a file on the sysNAND. 
+          Then, SX OS uses that file when booting into "emuNAND". As a result, SX OS's "emuNAND" can't be updated, and there might be a risk involved when going over the allocated amount of space for the "emuNAND", as Nintendo still reports the full NAND size on "emuNAND".
+          This comes in addition to the fact that since this "emuNAND" is stored on the sysNAND, it doesn't provide any protection, should your sysNAND become corrupted, as this will also result in this emuNAND becoming unbootable.
+        </p>
+        <p>
+          <strong id="nand-dump">Q: Can I dump my NAND?</strong><br>
+          A: Yes, and you should dump it, so that you can restore it in case your NAND bricks. Follow the instructions below on how to dump it.<br>
+
+          <ol>
+            <li>Put your Switch into RCM and boot Hekate. To do this, follow the instructions at <a class="a-table" target="_blank" href="index.html">the main guide</a>, but stop at the point where it instructs you to go to <code>Launch</code>.</li>
+            <li>Use the volume and power buttons to select <code>Tools</code>, then select <code>Backup</code>.</li>
+            <li>Use the volume and power buttons to select <code>Backup eMMC BOOT0/1</code>.</li>
+            <li>Wait for the backup to complete. This should not take too long.</li>
+            <li>Press any key to return to the Hekate menu.</li>
+            <li>Use the volume and power buttons to select <code>Backup eMMC RAW GPP</code>.</li>
+            <li>For the next step, it depends on wether you have an SD card that has least 30GB of storage free.</li>
+            <ul>
+              <li>If you have an SD card that at least 30GB of storage available, you can just wait for the backup to complete. This can easily take several hours.</li>
+              <li>If you don't have an SD card that has at least 30GB of storage available, Hekate will make partial NAND dumps and you will need to move them to your computer during the backup. 
+                Hekate will prompt you when to do this. When it does, plug your SD card into your computer and move the <code>backup/(number)/rawnand.bin</code> files 
+                (they'll be named as <code>rawnand.bin.00</code>, <code>rawnand.bin.01</code> and so on) to a folder on your computer. 
+                After that, unplug your SD card and put it in your Switch, press any button and then select <code>Backup eMMC RAW GPP</code> again. 
+                Rinse and repeat until it says it finished.</li>
+            </ul>
+            <li>Unplug your SD card and put it in your computer.</li>
+            <li>Move the contents of the "backup" folder to a safe folder on your computer.</li>
+            <li>Put your SD card back in your Switch.</li>
+            <li>If your SD card has had less than 30GB of space available during the backup process, you will need to combine the "rawnand.bin" files. See below on how to do that.</li>
+          </ol>
+        </p>
+        <p>
+          <strong id="combine-nand-dump">Q: I dumped my NAND, but I have partial NAND dumps. How can I make a full NAND dump out of these?</strong><br>
+          A: 
+          
+          <ol>
+            <li>Go to the latest release of <a class="a-table" target="_blank" href="https://github.com/CTCaer/hekate/releases/latest">hekate</a> and download the <code>joiner_scripts_for_windows_linux_macos.zip</code> file and extract it.</li>
+            <li>Add <code>.sh</code> to the end of the filename of <code>join_15_2GBparts_linux_macosx</code> and <code>join_30_1GBparts_linux_macosx</code>.</li>
+            <li>Count how many partial dumps you have (you should have either 15 or 30 files, if you have a different amount, you are missing partial dumps) and move all the partial dumps to the folder you extracted it to.</li>
+            <li>Open the appropriate script for your system and amount of dumps:</li>
+            <ul>
+              <li>If you had 15 files and are on Windows, open the <code>join_15_2GBparts_windows.bat</code> file.</li>
+              <li>If you had 15 files and are on macOS/Linux, open the <code>join_15_2GBparts_linux_macosx.sh</code> script. (Note: Linux users may need to run this file from a Terminal instead and mark it as executable).</li>
+              <li>If you had 30 files and are on Windows, open the <code>join_30_1GBparts_windows.bat</code> file.</li>
+              <li>If you had 30 files and are on macOS/Linux, open the <code>join_30_1GBparts_linux_macosx.sh</code> script. (Note: Linux users may need to run this file from a Terminal instead and mark it as executable).</li>
+            </ul>
+            <li>Once the script finishes running, you should have a file called <code>rawnand.bin</code> in the same folder. This file is your NAND backup.</li>
+        </ol>
+        Note that you <i>cannot</i> restore partial NAND backups. If you need to restore a NAND backup, you will need to have an SD card that is at least 30GB in size.
+        </p>
+        <h2>Credits</h2>
+        <p>
+          <ul>
+            <li>Valentijn <a class="a-table" href="https://github.com/noirscape">"noirscape"</a> V. (writing)</li>
+            <li><a class="a-table" href="https://github.com/jisagi">Jisagi</a> (base layout)</li>
+          </ul>
+          <hr>
+        </p>
+        <h2>Issues</h2>
+        <p>
+          Please report any issues with the guide on the <a class="a-table" href="https://github.com/noirscape/SwitchGuide/issues">Issue tracker</a>. FAQ suggestions go there as well.
+        </p>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
