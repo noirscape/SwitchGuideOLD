@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68539616-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68539616-4');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Switch Homebrew Guide</title>
+  <link rel="shortcut icon" href="{{ site.url }}/public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="{{ site.url }}/public/images/favicon.ico" type="image/x-icon" />
+  <script src="{{ site.url }}/public/js/jquery.min.js"></script>
+  <script src="{{ site.url }}/public/js/bootstrap.bundle.min.js"></script>
+  <link href="{{ site.url }}/public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="{{ site.url }}/public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="How to run homebrew on your Nintendo Switch">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/83742385e3de85014f348570720f2e31">
+</head>
+
+<body>
+  <div class="container-content container-fluid">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1 class="mt-5 text-center h1-page-title">{{page.title}}</h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            {{ content }}
+        <hr>
+        <h2>Issues</h2>
+        <p>
+            Please report any issues with the guide on the <a class="a-table" href="https://github.com/noirscape/SwitchGuide/issues">Issue tracker</a>.
+        </p>    
+        </div>
+        <div class="col-lg-2">
+        <div class="content-table">
+          <p class="text-center content-table-title">Overview</p>
+          <hr class="content-table-hr">
+          <a href="{{ site.url }}" class="a-table a-table-section">Information</a>
+          <hr class="content-table-hr">
+          <a href="{{ site.url }}/sdcard.html" class="a-table">1. Setting up your SD card and bootkit</a>
+          <hr class="content-table-hr">
+          2. OS-Specific preparations
+          <ol>
+              <li><a href="{{ site.url }}/os-specific-preparations/windows.html" class="a-table">Windows</a></li>
+              <li><a href="{{ site.url }}/os-specific-preparations/linux.html" class="a-table">macOS/Linux</a></li>
+              <li><a href="{{ site.url }}/os-specific-preparations/android.html" class="a-table">chromeOS/android</a></li>
+            </ol>
+          <hr class="content-table-hr">
+          3. Launching CFW
+          <ol>
+              <li><a href="{{ site.url }}/launching-cfw/windows.html" class="a-table">Windows</a></li>
+              <li><a href="{{ site.url }}/launching-cfw/linux.html" class="a-table">macOS/Linux</a></li>
+              <li><a href="{{ site.url }}/launching-cfw/android.html" class="a-table">chromeOS/android</a></li>
+            </ol>
+            <hr class="content-table-hr">
+            <p><a href="{{ site.url }}/finalizing.html" class="a-table a-table-section">Final notes</p>  
+            <hr class="content-table-hr">
+          <p><a href="{{ site.url }}/credits.html" class="a-table a-table-section">Credits</p>
+          <hr class="content-table-hr">
+          <p><a href="{{ site.url }}/faq.html" class="a-table a-table-section">FAQ</p>
+          <hr class="content-table-hr">
+          <p><a href="{{ site.url }}/1-0-0.html" class="a-table a-table-section">1.0.0 Switch</p>  
+            <!-- <hr class="content-table-hr">
+          <a href="./injection/" class="a-table">3. Game Patching</a>
+          <br>
+          <p></p> -->
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
