@@ -6,7 +6,6 @@ title: OS-Specific preparations (macOS/Linux)
 You will only have to do these steps once for each device you want to launch CFW from.
 {: .info-box}
 
-
 ### Installing python3
 
 Open a terminal window, then enter the following commands if you are on macOS. Enter your password when prompted.
@@ -25,5 +24,5 @@ Open a terminal window and run the following command. Enter your password when p
 
 `sudo pip3 install pyusb`
 
-[Continue to Launching CFW (macOS/Linux)]({{ site.url }}/launching-cfw/linux.html){: .a-table}
+[Continue to Launching CFW (macOS/Linux)]({{ baseurl }}/launching-cfw/linux.html){: .a-table}
 {: .info-box}
