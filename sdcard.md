@@ -38,6 +38,6 @@ You will only have to create this bootkit once. When an update for hekate releas
 
 The next step depends on the platform you want to boot CFW from.
 
-- If you plan on booting CFW from a Windows system, go [here]({{ baseurl }}/os-specific-preparations/windows.html){: .a-table}
-- If you plan on booting CFW from a macOS or Linux system, go [here]({{ baseurl }}/os-specific-preparations/linux.html){: .a-table}
-- If you plan on booting CFW from an Android or chromeOS device, go [here]({{ baseurl }}/os-specific-preparations/android.html){: .a-table}
+- If you plan on booting CFW from a Windows system, go [here](os-specific-preparations/windows.html){: .a-table}
+- If you plan on booting CFW from a macOS or Linux system, go [here](os-specific-preparations/linux.html){: .a-table}
+- If you plan on booting CFW from an Android or chromeOS device, go [here](os-specific-preparations/android.html){: .a-table}

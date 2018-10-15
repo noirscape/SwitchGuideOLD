@@ -24,5 +24,5 @@ Open a terminal window and run the following command. Enter your password when p
 
 `sudo pip3 install pyusb`
 
-[Continue to Launching CFW (macOS/Linux)]({{ baseurl }}/launching-cfw/linux.html){: .a-table}
+[Continue to Launching CFW (macOS/Linux)]({{ '/launching-cfw/linux.html' | relative_url }}){: .a-table}
 {: .info-box}

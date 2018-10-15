@@ -14,5 +14,5 @@ You will only have to do these steps once for each device you want to launch CFW
 4. For the driver type, use the arrows to navigate until you see `libusbK (v3.0.7.0)`.
 5. Click the big `Install Driver` button. Device Manager should now list `APX` under the `libusbK USB Devices` tree item.
 
-[Continue to Launching CFW (Windows)]({{ baseurl }}/launching-cfw/windows.html){: .a-table}
+[Continue to Launching CFW (Windows)]({{ '/launching-cfw/windows.html' | relative_url }}){: .a-table}
 {: .info-box}
