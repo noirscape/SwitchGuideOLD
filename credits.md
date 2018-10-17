@@ -15,7 +15,6 @@ Special thanks go to all of the following people for making this guide possible:
   - [The Cease and DeSwitch organization](https://github.com/Cease-and-DeSwitch){: .a-table} for fusee-launcher.
   - [yellows8](https://github.com/yellows8){: .a-table} and SwitchBrew for the Homebrew Launcher.
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
-  - [noahc3](https://github.com/noahc3){: .a-table} for sdsetup.com.
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
 Finally, I am [noirscape](https://github.com/noirscape){: .a-table}, the writer of this guide.
