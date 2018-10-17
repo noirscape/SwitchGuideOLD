@@ -35,7 +35,7 @@ In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.ne
 
 ### Are there any risks to running homebrew
 
-Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}.
+Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}. That said, Atmosphére, the CFW that will be installed if you use this guide includes the `creport` module. This module will store crash dumps to your SD card and does not report them to Nintendo. This means that you can safely use Homebrew.
 
 Go to [Setting up your SD card](sdcard.html){: .a-table} to get started.
 {: .info-box}
