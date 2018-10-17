@@ -12,7 +12,7 @@ You will have to do these steps each time you want to boot into CFW.
 2. Go to [this website](https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html){: .a-table target="_blank"}.
 3. Under the Payload section, select upload payload and upload the .bin file you previously downloaded.
 4. Click `do the thing`, select `APX` and click connect.</li>
-5. Once hekate loads, using the volume and power buttons, select `Launch - > CFW`.
+5. Once hekate loads, using the volume and power buttons, select `Launch - > Atmosphere`.
 6. Once your Switch boots, you can open the album applet to load the Homebrew Launcher.
 
 It is highly recommended to read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table}

@@ -6,12 +6,6 @@ title: Switch Homebrew Guide
 If you need assistance, visit us on [Discord](https://discord.gg/C29hYvh){: target="_blank" .a-table}.
 {: .info-box}
 
-This guide uses sdsetup. sdsetup is used because it has the most up-to-date files. That said, sdsetup also allows generating SX OS/ReiNX setups. These are not supported by this guide and not supported on the previously linked Discord.
-{: .alert-box}
-
-The Hekate bootmenu will reference a Discord server. This Discord server is not considered supported by this guide and not supported on the previously linked Discord. 
-{: .alert-box}
-
 ### Terminology used in this guide
 
 - **Hekate**: A bootloader for the Nintendo Switch.
@@ -32,24 +26,16 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
 - If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.
 - A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update".)
-- A zip generated on [sdsetup.com](https://www.sdsetup.com/console?switch#atmosphere;atmos_musthave;atmos_bootlogo;atmos_sysftpd;hbmenu;appstorenx;checkpoint;hekate;tegrarcmsmash;){: .a-table}. Scroll down and click "Download your zip". There is no need to modify any of the selected options.
-- [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
-- The following files (use Ctrl-S or Apple key-S to save these):
-  - [fusee-launcher.py](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py){: target="_blank" .a-table}
-  - [boot_cfw_win32.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win32.bat){: target="_blank" .a-table}
-  - [boot_cfw_win64.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win64.bat){: target="_blank" .a-table}
-  - [boot_macOS-Linux.sh_win64.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_macOS-Linux.sh){: target="_blank" .a-table}
-- Some platform-specific dependencies, listed for each supported OS.
 
 ### What are the advantages to running homebrew
 
 Running homebrew will allow you to run tools such as [Checkpoint](https://github.com/BernardoGiordano/Checkpoint){: target="_blank" .a-table}, a save manager.
 You also can run emulators like [RetroArch](https://www.retroarch.com/?page=platforms){: target="_blank" .a-table} to play retro games on the Switch.
-In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481){: target="_blank" .a-table} and [Pong](https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong){: target="_blank" .a-table}.
+In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481){: target="_blank" .a-table} and [Pong](https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong){: target="_blank" .a-table} and [SudokuNX](https://github.com/ZetaDesigns/SudokuNX).
 
 ### Are there any risks to running homebrew
 
-Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}.
+Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}. That said, Atmosphére, the CFW that will be installed if you use this guide includes the `creport` module. This module will store crash dumps to your SD card and does not report them to Nintendo. This means that you can safely use Homebrew.
 
 Go to [Setting up your SD card](sdcard.html){: .a-table} to get started.
 {: .info-box}
