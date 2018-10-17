@@ -5,12 +5,12 @@ title: Setting up your SD card and bootkit
 
 ### What you will need
 
-- The latest release of [Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases/latest){. a-table target="_blank"}. For this step, you will need the zip file.
-- The latest release of [Hekate](github.com/ctcaer/hekate/releases/latest){. a-table target="_blank"}
-- The latest release of the [homebrew launcher](https://github.com/switchbrew/nx-hbmenu/releases/latest).
-- The latest release of [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases/latest). Download the `.nro` file.
-- [sys-ftpd.kip](https://noirscape.github.io/SwitchGuide/assets/sys-ftpd.kip){. a-table} ([source](https://github.com/jakibaki/sys-ftpd{. a-table target="_blank"}))
-- [atmosphere.ini](https://noirscape.github.io/SwitchGuide/assets/atmosphere.ini){. a-table}.
+- The latest release of [Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases/latest){: .a-table target="_blank"}. For this step, you will need the zip file.
+- The latest release of [Hekate](github.com/ctcaer/hekate/releases/latest){: .a-table target="_blank"}
+- The latest release of the [homebrew launcher](https://github.com/switchbrew/nx-hbmenu/releases/latest){: .a-table target="_blank"}.
+- The latest release of [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases/latest){: .a-table target="_blank"}. Download the `.nro` file.
+- [sys-ftpd.kip](https://noirscape.github.io/SwitchGuide/assets/sys-ftpd.kip){: .a-table} ([source](https://github.com/jakibaki/sys-ftpd){: .a-table target="_blank"})
+- [atmosphere.ini](https://noirscape.github.io/SwitchGuide/assets/atmosphere.ini){: .a-table}.
 
 ### Setting up your sd card
 

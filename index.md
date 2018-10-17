@@ -32,14 +32,6 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
 - If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.
 - A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update".)
-- The latest release of [Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases){. a-table target="_blank"}. Download both the zip file and the bin file.
-- [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
-- The following files (use Ctrl-S or Apple key-S to save these):
-  - [fusee-launcher.py](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py){: target="_blank" .a-table}
-  - [boot_cfw_win32.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win32.bat){: target="_blank" .a-table}
-  - [boot_cfw_win64.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_cfw_win64.bat){: target="_blank" .a-table}
-  - [boot_macOS-Linux.sh_win64.bat](https://gist.github.com/noirscape/e039d84e5e85e502bceb8b3d454a9b46/raw/e3b46e1d4b4168bf58b3e0779e6f43874b63aa88/boot_macOS-Linux.sh){: target="_blank" .a-table}
-- Some platform-specific dependencies, listed for each supported OS.
 
 ### What are the advantages to running homebrew
 

@@ -11,7 +11,7 @@ You will only have to do these steps once for each device you want to launch CFW
 - [TegraRCMSmash](https://files.sshnuke.net/TegraRcmSmash1213.zip){: .a-table}
 - [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
 - [Zadig](http://zadig.akeo.ie/downloads/zadig.exe){: .a-table target="_blank"}
-- The latest release of [Hekate](https://github.com/ctcaer/hekate/releases/latest)
+- The latest release of [Hekate](https://github.com/ctcaer/hekate/releases/latest){: .a-table target="_blank"}
 - The following files (use Ctrl-S or Apple key-S to save these):
   - [boot_cfw_win32.bat](https://noirscape.github.io/SwitchGuide/assets/boot_cfw_win32.bat){: target="_blank" .a-table}
   - [boot_cfw_win64.bat](https://noirscape.github.io/SwitchGuide/assets/boot_cfw_win64.bat){: target="_blank" .a-table}
