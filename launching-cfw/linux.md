@@ -13,5 +13,5 @@ You will have to do these steps each time you want to boot into CFW.
 3. Once hekate loads, using the volume and power buttons, select `Launch - > Atmosphere`.
 4. Once your Switch boots, you can open the album applet to load the Homebrew Launcher.
 
-It is highly recommended to read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table}
+You should read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table} so you can dump your NAND.
 {: .info-box}
