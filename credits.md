@@ -13,8 +13,9 @@ Special thanks go to all of the following people for making this guide possible:
   - [CTCaer](https://github.com/ctcaer){: .a-table} for Hekate.
   - [The Atmosphere-NX organization](https://github.com/Atmosphere-NX){: .a-table} for Atmosphére.
   - [The Cease and DeSwitch organization](https://github.com/Cease-and-DeSwitch){: .a-table} for fusee-launcher.
-  - [yellows8](https://github.com/yellows8){: .a-table} and SwitchBrew for the Homebrew Launcher.
+  - [yellows8](https://github.com/yellows8){: .a-table} and SwitchBrew for the Homebrew Launcher and nx-hbloader.
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
+  - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
 Finally, I am [noirscape](https://github.com/noirscape){: .a-table}, the writer of this guide.

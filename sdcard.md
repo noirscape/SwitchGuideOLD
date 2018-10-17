@@ -10,7 +10,8 @@ title: Setting up your SD card and bootkit
 - The latest release of the [homebrew launcher](https://github.com/switchbrew/nx-hbmenu/releases/latest){: .a-table target="_blank"}.
 - The latest release of [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases/latest){: .a-table target="_blank"}. Download the `.nro` file.
 - [sys-ftpd.kip](https://noirscape.github.io/SwitchGuide/assets/sys-ftpd.kip){: .a-table} ([source](https://github.com/jakibaki/sys-ftpd){: .a-table target="_blank"})
-- [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate-ipl.ini){: .a-table}.
+- [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate_ipl.ini){: .a-table}
+- [hbl.nsp](https://noirscape.github.io/SwitchGuide/assets/hbl.nsp){: .a-table}
 
 ### Setting up your sd card
 
@@ -22,10 +23,11 @@ title: Setting up your SD card and bootkit
 6. Copy `hbmenu.nro` to the root of your SD card.
 7. Make a folder called `switch` on the root of your SD card.
 8. Copy `checkpoint.nro` to the `switch` folder.
-9. In the `atmosphere` folder on your SD card, make a folder called `kips`.
-10. In the `kips` folder, place `sys-ftpd.kip`
-11. In the `bootloader` folder .
-12. Safely remove your microSD card and plug it back in your Switch.
+9. In the `atmosphere` folder on your SD card, place `hbl.nsp`.
+10. In the `atmosphere` folder on your SD card, make a folder called `kips`.
+11. In the `kips` folder, place `sys-ftpd.kip`.
+12. In the `bootloader` folder on your SD card, place `hekate_ipl.ini`.
+13. Safely remove your microSD card and plug it back in your Switch.
 
 ---
 
