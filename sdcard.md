@@ -11,7 +11,7 @@ title: Setting up your SD card and bootkit
 - The latest release of [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases/latest){: .a-table target="_blank"}. Download the `.nro` file.
 - The latest release of [hb-appstore](https://github.com/vgmoose/hb-appstore/releases/latest){: .a-table target="_blank"}.
 - [sys-ftpd.kip](https://noirscape.github.io/SwitchGuide/assets/sys-ftpd.kip){: .a-table} ([source](https://github.com/jakibaki/sys-ftpd){: .a-table target="_blank"})
-- [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate_ipl.ini){: .a-table}
+- [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate_ipl.ini){: .a-table} (use Ctrl-S or Apple key-S to save this file)
 - The latest release of [nx-hbloader](https://github.com/switchbrew/nx-hbloader/releases/latest){: .a-table}
 
 ### Setting up your sd card
@@ -21,11 +21,11 @@ title: Setting up your SD card and bootkit
 3. Copy the `atmosphere` folder from the Atmosphére zip to your SD card.
 4. Copy `fusee-secondary.bin` from the Atmosphére zip to the root of your SD card.
 5. Copy `fusee-primary.bin` to the to the root of your SD card.
-6. Copy `hbmenu.nro` from the `nx-hbloader` release to the root of your SD card.
+6. Copy `hbmenu.nro`from the `nx-hbmenu` release  to the root of your SD card.
 7. Make a folder called `switch` on the root of your SD card.
-8. Copy `checkpoint.nro` to the `switch` folder.
+8. Copy `checkpoint.nro` from the `Checkpoint` release to the `switch` folder.
 9. Extract the `hb-appstore` zip and copy `appstore.nro` to the switch folder.
-10. In the `atmosphere` folder on your SD card, place `hbl.nsp`.
+10. In the `atmosphere` folder on your SD card, place `hbl.nsp` from the `nx-hbloader` release.
 11. In the `atmosphere` folder on your SD card, make a folder called `kips`.
 12. In the `kips` folder, place `sys-ftpd.kip`.
 13. In the `bootloader` folder on your SD card, place `hekate_ipl.ini`.
