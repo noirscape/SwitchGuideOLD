@@ -6,12 +6,6 @@ title: Switch Homebrew Guide
 If you need assistance, visit us on [Discord](https://discord.gg/C29hYvh){: target="_blank" .a-table}.
 {: .info-box}
 
-This guide uses sdsetup. sdsetup is used because it has the most up-to-date files. That said, sdsetup also allows generating SX OS/ReiNX setups. These are not supported by this guide and not supported on the previously linked Discord.
-{: .alert-box}
-
-The Hekate bootmenu will reference a Discord server. This Discord server is not considered supported by this guide and not supported on the previously linked Discord. 
-{: .alert-box}
-
 ### Terminology used in this guide
 
 - **Hekate**: A bootloader for the Nintendo Switch.
