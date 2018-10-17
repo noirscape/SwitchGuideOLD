@@ -18,4 +18,12 @@ Special thanks go to all of the following people for making this guide possible:
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
+Additional credits for the 1.0.0 RCM guide:
+
+- Noëlle, for explaining the entire setup to me, since I don't own a 1.0.0 Switch.
+- [Plailect](https://github.com/plailect){: .a-table}, large portions of the PegaSwitch guide were lifted from switch.hacks.guide .
+- [stuckpixel](https://github.com/pixel-stuck){: .a-table}, `reboot_to_rcm.nsp`
+- [TuxSH](https://github.com/tuxsh){: .a-table}, `nsp.js`.
+- ReSwitched (developers of PegaSwitch.)
+
 Finally, I am [noirscape](https://github.com/noirscape){: .a-table}, the writer of this guide.
