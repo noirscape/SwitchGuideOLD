@@ -32,7 +32,7 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
 - If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.
 - A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update".)
-- A zip generated on [sdsetup.com](https://www.sdsetup.com/console?switch#atmosphere;atmos_musthave;atmos_bootlogo;atmos_sysftpd;hbmenu;appstorenx;checkpoint;hekate;tegrarcmsmash;){: .a-table}. Scroll down and click "Download your zip". There is no need to modify any of the selected options.
+- The latest release of [Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases){. a-table target="_blank"}. Download both the zip file and the bin file.
 - [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
 - The following files (use Ctrl-S or Apple key-S to save these):
   - [fusee-launcher.py](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py){: target="_blank" .a-table}
