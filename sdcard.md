@@ -6,7 +6,7 @@ title: Setting up your SD card and bootkit
 ### What you will need
 
 - The latest release of [Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases/latest){: .a-table target="_blank"}. For this step, you will need the zip file and `fusee-primary.bin`.
-- The latest release of [Hekate](github.com/ctcaer/hekate/releases/latest){: .a-table target="_blank"}
+- The latest release of [Hekate](https://github.com/ctcaer/hekate/releases/latest){: .a-table target="_blank"}
 - The latest release of the [homebrew launcher](https://github.com/switchbrew/nx-hbmenu/releases/latest){: .a-table target="_blank"}.
 - The latest release of [Checkpoint](https://github.com/FlagBrew/Checkpoint/releases/latest){: .a-table target="_blank"}. Download the `.nro` file.
 - The latest release of [hb-appstore](https://github.com/vgmoose/hb-appstore/releases/latest){: .a-table target="_blank"}.
