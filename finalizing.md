@@ -6,9 +6,10 @@ title: Final notes
 ### What next?
 
 - You have now succesfully installed CFW on your Nintendo Switch.
-- You can manage save data using Checkpoint (by Flagbrew), a save manager that was included in this starting pack.
+- You can manage save data using Checkpoint (by Flagbrew), a save manager.
 - You can download new homebrew using hb App Store (also known as Appstore-NX, by vgmoose).
-- You can transfer files to your Switch over FTP using sys-ftpd (by jakibaki). No authentication is needed and the FTP server runs on port 5000.
+- You can transfer files to your Switch over FTP using sys-ftpd (by jakibaki). No authentication is needed and the FTP server runs on port 5000. If you don't want this, remove the `sys-ftpd.kip` file from the `kips` folder in the `atmosphere` folder.
+- You can load any KIP file you want by placing them in the `kips` folder in your `atmosphere` folder. These KIPs will be loaded automatically when booting Atmosphére. **Loading KIPs from unknown sources may damage your system. Be careful with what KIPs you load.**
 - You will probably want to create a NAND backup, in case you brick your Switch. Steps to do so can be found in the [FAQ](faq.html#nand-dump){: .a-table target="_blank"}.
 - When rebooting, your access to CFW will be lost, unless you follow the steps at Launching CFW again.
 
