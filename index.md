@@ -31,7 +31,7 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
 
 Running homebrew will allow you to run tools such as [Checkpoint](https://github.com/BernardoGiordano/Checkpoint){: target="_blank" .a-table}, a save manager.
 You also can run emulators like [RetroArch](https://www.retroarch.com/?page=platforms){: target="_blank" .a-table} to play retro games on the Switch.
-In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481){: target="_blank" .a-table} and [Pong](https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong){: target="_blank" .a-table}.
+In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.net/threads/tetriswitch-a-tetris-clone-for-the-switch.498481){: target="_blank" .a-table} and [Pong](https://github.com/I-EAT-CHEEZE-YO/switch_sdl_pong){: target="_blank" .a-table} and [SudokuNX](https://github.com/ZetaDesigns/SudokuNX).
 
 ### Are there any risks to running homebrew
 
