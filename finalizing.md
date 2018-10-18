@@ -17,11 +17,11 @@ title: Final notes
 8. Unplug your SD card and put it in your computer.
 9. Move the contents of the `backup` folder to a safe folder on your computer.
 10. Put your SD card back in your Switch.
-11. If your SD card has had less than 30GB of space available during the backup process, you will need to combine the "rawnand.bin" files. See below on how to do that.
+11. If your SD card has had less than 30GB of space available during the backup process or your SD card was not formatted as exFAT, you will need to combine the "rawnand.bin" files. See below on how to do that.
 
 ### Combining rawnand.bin files
 
-Note that you *cannot* restore partial NAND backups. If you need to restore a NAND backup, you will need to have an SD card that is at least 30GB in size.
+Note that you *cannot* restore partial NAND backups. If you need to restore a NAND backup, you will need to have an SD card that is at least 30GB in size and it must be formatted as exFAT.
 {: .info-box}
 
 1. Go to the latest release of [hekate](https://github.com/CTCaer/hekate/releases/latest){: .a-table} and download the `joiner_scripts_for_windows_linux_macos.zip` file and extract it.
@@ -33,6 +33,10 @@ Note that you *cannot* restore partial NAND backups. If you need to restore a NA
   - If you had 30 files and are on Windows, open the `join_30_1GBparts_windows.bat` file.
   - If you had 30 files and are on macOS/Linux, open the `join_30_1GBparts_linux_macosx.sh` script. (Note: Linux users may need to run this file from a terminal instead and mark it as executable.)
 5. Once the script finishes running, you should have a file called `rawnand.bin` in the same folder. This file is your NAND backup.
+
+#### About restoring NAND backups
+
+When restoring NAND backups, you must use an exFAT filesystem! FAT32 filesystems will not work for restoring NAND backups due to size limitations on FAT32 filesystems (FAT32 cannot hold files larger than 4GB and the rawnand.bin is ~29GB). Hekate comes with it's _own_ exFAT driver. This means you do not need to install the exFAT "update" from Nintendo to restore your NAND.
 
 
 ### What next?
