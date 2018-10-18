@@ -37,7 +37,8 @@ code {
   border: 1px solid lightslategrey;
   border-radius: 4px;
   color: rgb(221, 225, 230);
-  white-space: nowrap;
+  display: inline-block;
+  /* white-space: nowrap; */
 }
 
 .content-table {
