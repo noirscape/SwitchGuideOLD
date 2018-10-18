@@ -12,7 +12,7 @@ You will only have to do these steps once for each device you want to launch CFW
 - [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
 - [Zadig](http://zadig.akeo.ie/downloads/zadig.exe){: .a-table target="_blank"}
 - The latest release of [Hekate](https://github.com/ctcaer/hekate/releases/latest){: .a-table target="_blank"}
-- The following files (use Ctrl-S or Apple key-S to save these):
+- The following files (use Ctrl-S or Apple key-S to save these) Make sure these files end in `.bat` ! Some browsers might add `.txt` to the end of this filename. If your browser does this, remove the `.txt` extension! On Windows you might need to disable hiding extensions from files. To do so, [see this wikihow](https://www.wikihow.tech/Show-File-Extensions-on-Windows) .:
   - [boot_cfw_win32.bat](https://noirscape.github.io/SwitchGuide/assets/boot_cfw_win32.bat){: target="_blank" .a-table}
   - [boot_cfw_win64.bat](https://noirscape.github.io/SwitchGuide/assets/boot_cfw_win64.bat){: target="_blank" .a-table}
 
