@@ -27,7 +27,7 @@ title: Setting up your SD card
 9. Extract the `hb-appstore` zip and copy `appstore.nro` to the switch folder.
 10. In the `atmosphere` folder on your SD card, place `hbl.nsp` from the `nx-hbloader` release.
 11. In the `atmosphere` folder on your SD card, make a folder called `kips`.
-12. In the `kips` folder, place `sys-ftpd.kip`.
+12. If you are above firmware 3.0.0, in the `kips` folder, place `sys-ftpd.kip`. Otherwise, skip this step.
 13. In the `bootloader` folder on your SD card, place `hekate_ipl.ini`.
 14. Safely remove your microSD card and plug it back in your Switch.
 

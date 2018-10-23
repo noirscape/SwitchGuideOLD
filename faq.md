@@ -14,6 +14,7 @@ Below you will find a list of commonly asked questions and answers.
   - [How do I prevent getting banned? What are some of the common causes for bans?](#prevent-ban){: .a-table}
   - [How does Nintendo ban my system?](#how-ban){: .a-table}
 - [Homebrew related](#homebrew){: .a-table}
+  - [My switch won't boot after I select Atmosphere in hekate!](#sys-ftpd)
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
   - [What is the recommended microSD card size for Homebrew?](#recommended-size){: .a-table}
   - [Why is only Atmosphére and Hekate supported?](#why-atmosphere-hekate){: .a-table}
@@ -57,6 +58,11 @@ Users in European regions should go [here](https://accounts.nintendo.com/setting
 
 ## Homebrew related
 {: #homebrew}
+
+
+**Q: My switch won't boot after I select Atmosphere in hekate!**{: #sys-ftpd}
+
+A: Make sure you _don't_ have `sys-ftpd.kip` in the `kips` directory. `sys-ftpd` does not work on firmware versions on or below 3.0.0.
 
 **Q: Does this guide work on 6.0.1?**{: #can-i-run-on}
 
