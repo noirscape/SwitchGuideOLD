@@ -66,7 +66,7 @@ A: Make sure you _don't_ have `sys-ftpd.kip` in the `kips` directory. `sys-ftpd`
 
 **Q: Does this guide work on 6.0.1?**{: #can-i-run-on}
 
-A: This guide fully works on system version 6.0 and any version below.
+A: This guide fully works on system version 6.0.1 and any version below.
 
 **Q: What is the recommend microSD card size for homebrew?**{: #recommended-size}
 
