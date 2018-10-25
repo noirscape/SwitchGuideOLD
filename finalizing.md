@@ -49,6 +49,8 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 3. Delete `fusee-primary.bin` and `fusee-secondary.bin` from the root your SD card.
 4. Copy `fusee-secondary.bin` from the Atmosphére zip to the root of your SD card.
 5. Copy `fusee-primary.bin` to the to the root of your SD card.
+6. Safely remove your microSD card and plug it back in your Switch.
+7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
 
 ### Updating Hekate
 
@@ -57,6 +59,8 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 3. Open the `bootloader` folder on your SD card and if it exists, remove `update.bin`.
 4. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bootloader` folder on your SD card.
 5. Open the `bootloader` folder on your SD card and rename the file starting with `hekate_ctcaer` to `update.bin`. 
+6. Safely remove your microSD card and plug it back in your Switch.
+7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
 
 
 ### What next?
