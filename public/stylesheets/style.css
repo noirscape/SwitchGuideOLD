@@ -59,17 +59,17 @@ code {
   border-top: 1px solid rgb(22, 22, 22);
 }
 
-.a-table {
+a, .a-table {
   color: #b8d2df;
   text-decoration: underline;
 }
 
-.a-table:hover {
+a:hover, .a-table:hover {
   color: #b8d2df;
   text-decoration: initial;
 }
 
-.a-table:visited {
+a:visited, .a-table:visited {
   color: #8a9ea7;
   text-decoration: underline;
 }
