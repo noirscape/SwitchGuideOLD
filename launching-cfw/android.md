@@ -13,7 +13,8 @@ You will have to do these steps each time you want to boot into CFW.
 3. Under the Payload section, select upload payload and upload the .bin file you previously downloaded.
 4. Click `do the thing`, select `APX` and click connect.</li>
 5. Once hekate loads, using the volume and power buttons, select `Launch - > Atmosphere`.
-6. Once your Switch boots, you can open the album applet to load the Homebrew Launcher.
+6. To verify that Atmosphere launched properly, go to the System Settings and then scroll down to "System". Behind the line `Current system version:`, you should see your Switch's firmware version and `(AMS x.y.z)`. `x.y.z` are numbers that indicate the version of Atmosphere you are currently running.
+7. Once your Switch boots, you can open the album applet to load the Homebrew Launcher.
 
 You should read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table} so you can dump your NAND.
 {: .info-box}

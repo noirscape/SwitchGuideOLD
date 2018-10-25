@@ -38,6 +38,26 @@ Note that you *cannot* restore partial NAND backups. If you need to restore a NA
 
 When restoring NAND backups, you must use an exFAT filesystem! FAT32 filesystems will not work for restoring NAND backups due to size limitations on FAT32 filesystems (FAT32 cannot hold files larger than 4GB and the rawnand.bin is ~29GB). Hekate comes with it's _own_ exFAT driver. This means you do not need to install the exFAT "update" from Nintendo to restore your NAND.
 
+### Updating Atmosphére and Hekate
+
+To keep track of new releases of Atmosphére and Hekate, I recommend subscribing to [/r/switchhacks](https://reddit.com/r/switchhacks).
+
+#### Updating Atmosphére
+
+1. [Download the latest release of Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases/latest). Download both the zip file and `fusee-primary.bin`.
+2. Turn off your Switch and put your microSD card in your computer.
+3. Delete `fusee-primary.bin` and `fusee-secondary.bin` from the root your SD card.
+4. Copy `fusee-secondary.bin` from the Atmosphére zip to the root of your SD card.
+5. Copy `fusee-primary.bin` to the to the root of your SD card.
+
+### Updating Hekate
+
+1. [Download the latest release of Hekate](https://github.com/CTCaer/hekate/releases/latest).
+2. Turn off your Switch and put your microSD card in your computer.
+3. Open the `bootloader` folder on your SD card and if it exists, remove `update.bin`.
+4. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bootloader` folder on your SD card.
+5. Open the `bootloader` folder on your SD card and rename the file starting with `hekate_ctcaer` to `update.bin`. 
+
 
 ### What next?
 
