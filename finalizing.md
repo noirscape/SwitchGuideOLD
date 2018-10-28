@@ -70,8 +70,9 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 - You can download new homebrew using hb App Store (also known as Appstore-NX, by vgmoose).
 - You can transfer files to your Switch over FTP using sys-ftpd (by jakibaki) if you are running a firmware above 3.0.0. No authentication is needed and the FTP server runs on port 5000. If you don't want this, remove the `sys-ftpd.kip` file from the `kips` folder in the `atmosphere` folder.
 - You can load any KIP file you want by placing them in the `kips` folder in your `atmosphere` folder. These KIPs will be loaded automatically when booting Atmosphére. **Loading KIPs from unknown sources may damage your system. Be careful with what KIPs you load.**
-- You will probably want to create a NAND backup, in case you brick your Switch. Steps to do so can be found in the [FAQ](faq.html#nand-dump){: .a-table target="_blank"}.
 - When rebooting, your access to CFW will be lost, unless you follow the steps at Launching CFW again.
+- If you need to launch Stock firmware, select the `Stock` option when in Hekate's `Launch...` menu. You should not need to do this under normal circumstances, but it may be useful for troubleshooting.
+  - **If you use the homebrew ChoiDuJourNX to update your Switch's firmware to prevent burning these fuses, this option will burn fuses!**
 
 It is highly advised to also read the [FAQ](faq.html){: .a-table target="_blank")}
 {: .info-box}
