@@ -42,7 +42,34 @@ When restoring NAND backups, you must use an exFAT filesystem! FAT32 filesystems
 
 To keep track of new releases of Atmosphére and Hekate, I recommend subscribing to [/r/switchhacks](https://reddit.com/r/switchhacks).
 
-#### Updating Atmosphére
+### Installing pyNX
+
+1. Open the Homebrew Launcher.
+2. Open `hb App Store` through the Homebrew Launcher.
+3. Look for the program called `Pynx`.
+4. Press `A`
+5. Press `A` to download Pynx.
+6. Press the home button to exit `hb App Store`
+
+### Download the latest version of SwitchGuide-Updater
+
+1. [Download switchguideupdater.py](https://github.com/noirscape/SwitchGuide-Updater/releases/latest).
+2. Turn off your Switch and put your microSD card in your computer.
+3. Open the `switch` folder.
+4. Open the `PyNX` folder.
+5. Copy `switchguideupdater.py` to this folder.
+6. Safely remove your microSD card and plug it back in your Switch.
+7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
+
+### Updating Atmosphere or Hekate
+
+1. Open the Homebrew Launcher.
+2. Open `PyNX` through the Homebrew Launcher.
+3. Press the green button with the text `switchguideupdater.py` on it using the touch screen.
+4. Press `Update Atmosphere` or `Update Hekate` to update Atmosphere or Hekate respectively.
+5. To use the updated version of Atmosphere, reboot your Switch. You'll need to boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
+
+<!-- #### Updating Atmosphére
 
 1. [Download the latest release of Atmosphére](https://github.com/Atmosphere-NX/Atmosphere/releases/latest). Download both the zip file and `fusee-primary.bin`.
 2. Turn off your Switch and put your microSD card in your computer.
@@ -60,7 +87,7 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 4. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bootloader` folder on your SD card.
 5. Open the `bootloader` folder on your SD card and rename the file starting with `hekate_ctcaer` to `update.bin`. 
 6. Safely remove your microSD card and plug it back in your Switch.
-7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
+7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system. -->
 
 
 ### What next?
