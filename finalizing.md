@@ -42,7 +42,7 @@ When restoring NAND backups, you must use an exFAT filesystem! FAT32 filesystems
 
 To keep track of new releases of Atmosphére and Hekate, I recommend subscribing to [/r/switchhacks](https://reddit.com/r/switchhacks).
 
-### Installing pyNX
+#### Installing pyNX
 
 1. Open the Homebrew Launcher.
 2. Open `hb App Store` through the Homebrew Launcher.
@@ -51,7 +51,7 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 5. Press `A` to download Pynx.
 6. Press the home button to exit `hb App Store`
 
-### Download the latest version of SwitchGuide-Updater
+#### Download the latest version of SwitchGuide-Updater
 
 1. [Download switchguideupdater.py](https://github.com/noirscape/SwitchGuide-Updater/releases/latest).
 2. Turn off your Switch and put your microSD card in your computer.
@@ -61,7 +61,7 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 6. Safely remove your microSD card and plug it back in your Switch.
 7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
 
-### Updating Atmosphere or Hekate
+#### Updating Atmosphere or Hekate
 
 1. Open the Homebrew Launcher.
 2. Open `PyNX` through the Homebrew Launcher.
