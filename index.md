@@ -20,7 +20,11 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
 
 ### What you will need
 
-- A "first-generation" Switch. (All Switch consoles before July 2018 will work.)
+- A "first-generation" Switch. (All Switch consoles before July 2018 will work.) 
+    - If you are not sure about wether your Switch is a "first-generation" Switch, you can check [this thread](https://gbatemp.net/threads/switch-informations-by-serial-number.481215/). Match the first letters and numbers of your serial number to the list in the blue box. You can find your serial number using [these instructions by Nintendo](https://www.nintendo.com.au/how-to-find-the-serial-number-of-your-console). 
+        - If your serial number is listed as green, you have a "first-generation" Switch and will be able to boot CFW. 
+        - If your serial number is listed as orange, follow the guide, but you might not be able to boot CFW. 
+        - If your serial number is listed as red, your Switch is patched and you will not be able to boot CFW.
 - A way to put your Switch into RCM. See [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information. Users on 1.0.0 can also enter RCM from a software side by using a program called reboot_to_rcm. See [here](1-0-0.html){: target="_blank" .a-table} for more details.
 - A host PC running Windows, Linux, macOS or ChromeOS, or an Android device.
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
