@@ -18,6 +18,7 @@ Below you will find a list of commonly asked questions and answers.
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
   - [What is the recommended microSD card size for Homebrew?](#recommended-size){: .a-table}
   - [Why is only Atmosphére and Hekate supported?](#why-atmosphere-hekate){: .a-table}
+  - [I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?](#reinx-sxos-earlier)
   - [You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?](#sx-not-so-nand){: .a-table}
 
 ## RCM related
@@ -77,6 +78,18 @@ A: The recommended size is 128GB. This will permit you to both have an emuNAND a
 A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphere. In addition, SX OS has homebrew compatability issues with Atmosphere and Hekate which wont be supported.
 
 ReiNX on the other hand does not reimplement creport, which results in an increased chance of bans and makes development more difficult, as error reports are not dumped to the SD card, as well as making use of Atmosphére's sysmodules with a rename on the folders.
+
+**Q: I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?**{: #reinx-sxos-earlier}
+
+A: If you've made a NAND backup before installing homebrew, restore it. This will remove the SX OS "emuNAND". In addition, it will restore crash logs to their pristine state. If you have not done this, this should not matter, but it is advised you keep your Nintendo Switch offline to prevent it from being banned.
+
+To clean up ReiNX, it is advised to remove all folders except for the following:
+- `switch` This folder contains the homebrew applications you have installed.
+- `Nintendo` This folder contains all games that have been installed on your SD card.
+
+In addition, if you used unsigned NSPs (these include, but are not limited to 'backups'), you should uninstall these before following this guide.
+
+The same should go for users of the "SDFiles" or similar setups.
 
 **Q: You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?**{: #sx-not-so-nand}
 
