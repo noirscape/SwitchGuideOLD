@@ -46,20 +46,17 @@ To keep track of new releases of Atmosphére and Hekate, I recommend subscribing
 
 1. Open the Homebrew Launcher.
 2. Open `hb App Store` through the Homebrew Launcher.
-3. Look for the program called `Pynx`.
-4. Press `A`
+3. Look for the program called `Pynx` and use the arrow buttons to select it.
+4. Press `A` to view the detail menu.
 5. Press `A` to download Pynx.
-6. Press the home button to exit `hb App Store`
 
 #### Download the latest version of SwitchGuide-Updater
 
-1. [Download switchguideupdater.py](https://github.com/noirscape/SwitchGuide-Updater/releases/latest).
-2. Turn off your Switch and put your microSD card in your computer.
-3. Open the `switch` folder.
-4. Open the `PyNX` folder.
-5. Copy `switchguideupdater.py` to this folder.
-6. Safely remove your microSD card and plug it back in your Switch.
-7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
+1. Press `B` to go back to the main menu for `hb App Store`.
+2. Look for the program called `SwitchGuide-Updater` and use the arrow buttons to select it.
+3. Press `A` to view the detail menu.
+4. Press `A` to download SwitchGuide-Updater.
+5. Press the home button to exit `hb App Store`.
 
 #### Updating Atmosphere or Hekate
 
