@@ -16,6 +16,7 @@ Special thanks go to all of the following people for making this guide possible:
   - [yellows8](https://github.com/yellows8){: .a-table} and SwitchBrew for the Homebrew Launcher and nx-hbloader.
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
+  - SwitchBru for appstore-nx (provides SwitchGuide-Updater).
 - raizo#1337 for the domain name "switchguide.xyz".
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 

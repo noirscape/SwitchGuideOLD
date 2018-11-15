@@ -39,5 +39,5 @@ When Hekate updates, download the Hekate zip again and do step 6 again.
 5. Place `intermezzo.bin` in the `bin` folder.
 6. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bin` folder and rename it to `payload.bin`.
 
-[Continue to Launching CFW (Windows)]({{ '/launching-cfw/windows.html' | relative_url }}){: .a-table}
+[Continue to NAND dumping (Windows)]({{ '/nand-dump/windows.html' | relative_url }}){: .a-table}
 {: .info-box}
