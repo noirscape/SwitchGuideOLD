@@ -24,6 +24,8 @@ You will only have to do these steps once for each device you want to launch CFW
 3. Enter your password when prompted.
 4. Enter the following command: `brew install python`.
 5. Enter your password if prompted.
+6. Enter the following command: `brew install libusb`.
+7. Enter your password if prompted.
 
 #### Linux users
 
