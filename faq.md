@@ -77,23 +77,27 @@ A: The recommended size is 128GB. This will permit you to both have an emuNAND a
 
 A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphere. In addition, SX OS has homebrew compatability issues with Atmosphere and Hekate which wont be supported.
 
-ReiNX on the other hand does not reimplement creport, which results in an increased chance of bans and makes development more difficult, as error reports are not dumped to the SD card, as well as making use of Atmosphére's sysmodules with a rename on the folders.
+ReiNX on the other hand does not reimplement creport, which results in an increased chance of bans and makes development more difficult, as error reports are not dumped to the SD card, as well as making use of Atmosphére's sysmodules with a rename on the folders. This goes in combination with the fact that the way ReiNX modifies the system version to include ReiNXs version is done incorrectly, which results in bans as the way ReiNX does it means that the system version gets included in telemetry reports.
 
 **Q: I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?**{: #reinx-sxos-earlier}
 
-A: If you've made a NAND backup before installing homebrew, restore it. This will remove the SX OS "emuNAND". In addition, it will restore crash logs to their pristine state. If you have not done this, this should not matter, but it is advised you keep your Nintendo Switch offline to prevent it from being banned.
+A: If you've made a NAND backup before installing homebrew, restore it. This will remove the SX OS sysNAND "emuNAND". In addition, it will restore crash logs to their pristine state. If you have not done this, this should not matter, but it is advised you keep your Nintendo Switch offline to prevent it from being banned.
 
-To clean up ReiNX, it is advised to remove all folders except for the following:
+To clean up ReiNX and SX OS from the SD card, it is advised to remove all folders except for the following:
 - `switch` This folder contains the homebrew applications you have installed.
 - `Nintendo` This folder contains all games that have been installed on your SD card.
 
 In addition, if you used unsigned NSPs (these include, but are not limited to 'backups'), you should uninstall these before following this guide.
 
-The same should go for users of the "SDFiles" or similar setups.
+The same should go for users of the "SDFiles"/"Kosmos" or similar setups.
+
+Note: You will lose your SX OS SD card emuNAND.
 
 **Q: You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?**{: #sx-not-so-nand}
 
-A: SX OS's emuNAND is not the same implementation as a "proper" emuNAND. SX OS's implementation instead clones the sysNAND, removes a lot of the unused space and stores it as a file on the sysNAND. Then, SX OS uses that file when booting into "emuNAND". As a result, SX OS's "emuNAND" can't be updated, and there might be a risk involved when going over the allocated amount of space for the "emuNAND", as Nintendo still reports the full NAND size on "emuNAND". This comes in addition to the fact that since this "emuNAND" is stored on the sysNAND, it doesn't provide any protection, should your sysNAND become corrupted, as this will also result in this emuNAND becoming unbootable.
+A: SX OS's emuNAND has the issue that it is done with files that are mounted on the SD cards filesystem. What this means is that if your SD cards filesystem corrupts (which is inevitable, especially if youre using exFAT), you risk bricking this emuNAND as the files that this solution uses are at risk of being corrupted whenever the SD corrupts.
+
+A proper emuNAND solution (which is being worked on) would reserve free portions on the SD card and use those instead. This would mean that if the SD cards filesystem corrupts, your emuNAND would remain untouched.
 
 ---
 
