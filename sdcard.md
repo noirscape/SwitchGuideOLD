@@ -14,6 +14,30 @@ title: Setting up your SD card
 - [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate_ipl.ini) (use Ctrl-S or Apple key-S to save this file.) Make sure this file ends in `.ini` ! Some browsers might add `.txt` to the end of this filename. If your browser does this, remove the `.txt` extension! On Windows and macOS you might need to disable hiding extensions from files. To do so, [see this wikihow](https://www.wikihow.tech/Show-File-Extensions-on-Windows). On macOS, see [this iDownloadBlog page](https://www.idownloadblog.com/2014/10/29/how-to-show-or-hide-filename-extensions-in-os-x-yosemite/).
 - The latest release of [nx-hbloader](https://github.com/switchbrew/nx-hbloader/releases/latest){: .a-table}
 
+### Blocking updates
+
+You should follow these steps before following any of the other steps. This will block Nintendo's update servers. This is to prevent you from accidentally updating to 6.2 or higher.
+
+1. Open the settings applet on your Switch.
+2. Go to `Internet` -> `Internet Settings`.
+3. You will see a list of all WiFi networks nearby and those you've ever been connected to.
+4. For each network you've been connected to, select it and choose `Change settings`
+5. Change `DNS` to `Manual`.
+6. Set the primary DNS server to `163.172.141.219`.
+7. Set the secondary DNS `45.248.48.62`.
+8. Press the save button and then `B` to return to the network list.
+9. Repeat steps 4 to 8 for all WiFi networks you've been connected to.
+10. Press the Home button to get back to the main menu.
+
+### Removing update data.
+
+This is to remove a downloaded system update to prevent the update from nagging you whenever you start a game.
+
+1. Power off your Switch.
+2. Press Volume up + Volume down + Power at the same time until you see the Nintendo Switch logo appear.
+3. Your Switch will boot into Maintenance mode.
+4. Press the power button again to turn off your Switch.
+
 ### Setting up your sd card
 
 1. Turn off your Switch and put your microSD card in your computer.

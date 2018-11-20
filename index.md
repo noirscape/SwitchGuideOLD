@@ -6,6 +6,9 @@ title: Switch Homebrew Guide
 If you need assistance, visit us on [Discord](https://discord.gg/C29hYvh){: target="_blank" .a-table}.
 {: .info-box}
 
+It is currently **not** possible to run CFW on any device running 6.2 or higher. Downgrading from this firmware is also **not possible**. See more details [here](6-2.html). Follow [SciresM](https://twitter.com/SciresM) on Twitter to keep track of progress. There is **no estimated ETA as for when 6.2 becomes supported.**
+{: .info-box}
+
 ### Terminology used in this guide
 
 - **Hekate**: A bootloader for the Nintendo Switch.
@@ -16,7 +19,7 @@ If you need assistance, visit us on [Discord](https://discord.gg/C29hYvh){: targ
 
 ### What are we doing to run homebrew on the Switch
 
-This guide will boot you into Atmosphére using a combination of the RCM, the Hekate bootloader and Atmosphére CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions. Certain applications may not work on certain firmware versions so YMMV.
+This guide will boot you into Atmosphére using a combination of the RCM, the Hekate bootloader and Atmosphére CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions up until 6.1. Certain applications may not work on certain firmware versions so YMMV.
 
 ### What you will need
 
@@ -25,6 +28,7 @@ This guide will boot you into Atmosphére using a combination of the RCM, the He
         - If your serial number is listed as green, you have a "first-generation" Switch and will be able to boot CFW. 
         - If your serial number is listed as orange, follow the guide, but you might not be able to boot CFW. 
         - If your serial number is listed as red, your Switch is patched and you will not be able to boot CFW.
+- Firmware version 6.1 or lower.
 - A way to put your Switch into RCM. See [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information. Users on 1.0.0 can also enter RCM from a software side by using a program called reboot_to_rcm. See [here](1-0-0.html){: target="_blank" .a-table} for more details.
 - A host PC running Windows, Linux, macOS or ChromeOS, or an Android device.
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
