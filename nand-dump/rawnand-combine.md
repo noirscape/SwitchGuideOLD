@@ -21,5 +21,5 @@ Note that you *cannot* restore partial NAND backups. If you need to restore a NA
   - If you had 30 files and are on macOS/Linux, open the `join_30_1GBparts_linux_macosx.sh` script. (Note: Linux users may need to run this file from a terminal instead and mark it as executable.)
 5. Once the script finishes running, you should have a file called `rawnand.bin` in the same folder. This file is your NAND backup. Store it somewhere safe.
 
-Now that you have made a NAND dump, you can properly launch Atmosphere by following the instructions [here]({{ '/launching-cfw/' | relative_url }}).
+Now that you have made a NAND dump, you can properly launch Atmosphère by following the instructions [here]({{ '/launching-cfw/' | relative_url }}).
 {: .info-box}

@@ -14,10 +14,10 @@ Below you will find a list of commonly asked questions and answers.
   - [How do I prevent getting banned? What are some of the common causes for bans?](#prevent-ban){: .a-table}
   - [How does Nintendo ban my system?](#how-ban){: .a-table}
 - [Homebrew related](#homebrew){: .a-table}
-  - [My switch won't boot after I select Atmosphere in hekate!](#sys-ftpd)
+  - [My switch won't boot after I select Atmosphère in hekate!](#sys-ftpd)
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
   - [What is the recommended microSD card size for Homebrew?](#recommended-size){: .a-table}
-  - [Why is only Atmosphére and Hekate supported?](#why-atmosphere-hekate){: .a-table}
+  - [Why is only Atmosphère and Hekate supported?](#why-Atmosphère-hekate){: .a-table}
   - [I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?](#reinx-sxos-earlier)
   - [You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?](#sx-not-so-nand){: .a-table}
 
@@ -45,9 +45,9 @@ A: Nintendo has been rather strict when it comes to banning homebrew systems. If
 - Cheat or edit saves in games with online functionality
 - Modify your NAND
 - Using your Switch's client cert to connect to the CDN in an unauthorized manner.
-- Using untested Homebrew on a system without a reimplemented creport KIP. (Note: Atmosphere patches creport by default.)
+- Using untested Homebrew on a system without a reimplemented creport KIP. (Note: Atmosphère patches creport by default.)
 
-Note that the current setup given in the guide prevents you from doing the first bullet,as the given Atmosphere setup at the moment does not supply sigpatches, which are needed to install this type of content. Finally, Atmosphere will in the future release "Thermosphere". Thermosphere is Atmospheres implementation of emuNAND. This will result into being able to create an offline version of your NAND which you can use to safely test homebrew.
+Note that the current setup given in the guide prevents you from doing the first bullet,as the given Atmosphère setup at the moment does not supply sigpatches, which are needed to install this type of content. Finally, Atmosphère will in the future release "Thermosphere". Thermosphere is Atmosphères implementation of emuNAND. This will result into being able to create an offline version of your NAND which you can use to safely test homebrew.
 
 **Q: How does Nintendo ban my system?**{: #how-ban}
 
@@ -61,7 +61,7 @@ Users in European regions should go [here](https://accounts.nintendo.com/setting
 {: #homebrew}
 
 
-**Q: My switch won't boot after I select Atmosphere in hekate!**{: #sys-ftpd}
+**Q: My switch won't boot after I select Atmosphère in hekate!**{: #sys-ftpd}
 
 A: Make sure you _don't_ have `sys-ftpd.kip` in the `kips` directory. `sys-ftpd` does not work on firmware versions on or below 3.0.0.
 
@@ -73,11 +73,11 @@ A: This guide fully works on system version 6.1 and any version below.
 
 A: The recommended size is 128GB. This will permit you to both have an emuNAND and allows you to make a full NAND dump without issue, while also leaving enough storage space for games and homebrew.
 
-**Q: Why is only Atmosphere and Hekate supported? What about SX OS and ReiNX?**{: #why-atmosphere-hekate}
+**Q: Why is only Atmosphère and Hekate supported? What about SX OS and ReiNX?**{: #why-Atmosphère-hekate}
 
-A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphere. In addition, SX OS has homebrew compatability issues with Atmosphere and Hekate which wont be supported.
+A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphère. In addition, SX OS has homebrew compatability issues with Atmosphère and Hekate which wont be supported.
 
-ReiNX on the other hand does not reimplement creport, which results in an increased chance of bans and makes development more difficult, as error reports are not dumped to the SD card, as well as making use of Atmosphére's sysmodules with a rename on the folders. This goes in combination with the fact that the way ReiNX modifies the system version to include ReiNXs version is done incorrectly, which results in bans as the way ReiNX does it means that the system version gets included in telemetry reports.
+ReiNX on the other hand does not reimplement creport, which results in an increased chance of bans and makes development more difficult, as error reports are not dumped to the SD card, as well as making use of Atmosphère's sysmodules with a rename on the folders. This goes in combination with the fact that the way ReiNX modifies the system version to include ReiNXs version is done incorrectly, which results in bans as the way ReiNX does it means that the system version gets included in telemetry reports.
 
 **Q: I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?**{: #reinx-sxos-earlier}
 

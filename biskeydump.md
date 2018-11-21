@@ -21,7 +21,7 @@ In this step we will dump your BIS keys. Your BIS keys are needed in case you ac
 2. From the biskeydump zip, extract `biskeydump.bin`.
 3. Copy `biskeydump.bin` to the `payloads` folder in the `bootloader` folder on your SD card.
 4. Plug your SD card back in your Switch.
-5. Launch Hekate using the steps at [Launching CFW](/launching-cfw/). Stop at the step where it tells you to launch Atmosphere.
+5. Launch Hekate using the steps at [Launching CFW](/launching-cfw/). Stop at the step where it tells you to launch Atmosphère.
 6. Go to `Launch` -> `Payloads` -> `biskeydump.bin`.
 7. Wait a few seconds and your BIS keys should appear on top of the screen, as well as a QR code.
 8. Scan the QR code using your phone.

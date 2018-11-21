@@ -12,14 +12,14 @@ It is currently **not** possible to run CFW on any device running 6.2 or higher.
 ### Terminology used in this guide
 
 - **Hekate**: A bootloader for the Nintendo Switch.
-- **Atmosphére**: The CFW made by the Atmosphere-NX org.
+- **Atmosphère**: The CFW made by the Atmosphère-NX org.
 - **CFW**: A Custom Firmware. Custom Firmware permits access to homebrew on the Nintendo Switch.
 - **RCM**: A special mode of the Nintendo Switch's Tegra X1 chip that thanks to a bug allows us to push any payload to it. This exploit is known as ShofEL2 or fusee-gelee.
 - **bootkit**: A folder on your computer that you will use to launch CFW from RCM. It contains a few scripts, TegraRCMSmash, fusee-gelee and the Hekate payload. You will set one up during this guide. You will need access to this folder each time you want to launch CFW, so keep it in a safe spot where you can find it later.
 
 ### What are we doing to run homebrew on the Switch
 
-This guide will boot you into Atmosphére using a combination of the RCM, the Hekate bootloader and Atmosphére CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions up until 6.1. Certain applications may not work on certain firmware versions so YMMV.
+This guide will boot you into Atmosphère using a combination of the RCM, the Hekate bootloader and Atmosphère CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions up until 6.1. Certain applications may not work on certain firmware versions so YMMV.
 
 ### What you will need
 
@@ -43,7 +43,7 @@ In addition, you can run homebrew games such as [tetriswitch](https://gbatemp.ne
 
 ### Are there any risks to running homebrew
 
-Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}. That said, Atmosphére, the CFW that will be installed if you use this guide includes the `creport` module. This module will store crash dumps to your SD card and does not report them to Nintendo. This means that you can safely use Homebrew.
+Yes. Nintendo has increased the Telemetry on the Nintendo Switch compared to previous consoles and does ban if they detect you using homebrew. You can find more details on this and a comprehensive list [in the FAQ](faq.html#ban){: target="_blank" .a-table}. That said, Atmosphère, the CFW that will be installed if you use this guide includes the `creport` module. This module will store crash dumps to your SD card and does not report them to Nintendo. This means that you can safely use Homebrew.
 
 Users on firmware 1.0.0 should follow the [1.0.0 guide](1-0-0.html){: .a-table} as it contains important instructions.
 {: .info-box}
