@@ -42,15 +42,15 @@ This is to remove a downloaded system update to prevent the update from nagging 
 
 1. Turn off your Switch and put your microSD card in your computer.
 2. Copy the `bootloader` folder from the Hekate zip to your SD card.
-3. Copy the `Atmosphère` folder from the Atmosphère zip to your SD card.
+3. Copy the `atmosphere` folder from the Atmosphère zip to your SD card.
 4. Copy `fusee-secondary.bin` from the Atmosphère zip to the root of your SD card.
 5. Copy `fusee-primary.bin` to the to the root of your SD card.
 6. Copy `hbmenu.nro`from the `nx-hbmenu` release  to the root of your SD card.
 7. Make a folder called `switch` on the root of your SD card.
 8. Copy `checkpoint.nro` from the `Checkpoint` release to the `switch` folder.
 9. Extract the `hb-appstore` zip and copy `appstore.nro` to the switch folder.
-10. In the `Atmosphère` folder on your SD card, place `hbl.nsp` from the `nx-hbloader` release.
-11. In the `Atmosphère` folder on your SD card, make a folder called `kips`.
+10. In the `atmosphere` folder on your SD card, place `hbl.nsp` from the `nx-hbloader` release.
+11. In the `atmosphere` folder on your SD card, make a folder called `kips`.
 12. If you are above firmware 3.0.0, in the `kips` folder, place `sys-ftpd.kip`. Otherwise, skip this step.
 13. In the `bootloader` folder on your SD card, place `hekate_ipl.ini`.
 14. Safely remove your microSD card and plug it back in your Switch.
