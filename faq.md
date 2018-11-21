@@ -17,7 +17,7 @@ Below you will find a list of commonly asked questions and answers.
   - [My switch won't boot after I select Atmosphère in hekate!](#sys-ftpd)
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
   - [What is the recommended microSD card size for Homebrew?](#recommended-size){: .a-table}
-  - [Why is only Atmosphère and Hekate supported?](#why-Atmosphère-hekate){: .a-table}
+  - [Why is only Atmosphère and Hekate supported?](#why-atmosphere-hekate){: .a-table}
   - [I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?](#reinx-sxos-earlier)
   - [You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?](#sx-not-so-nand){: .a-table}
 
@@ -73,7 +73,7 @@ A: This guide fully works on system version 6.1 and any version below.
 
 A: The recommended size is 128GB. This will permit you to both have an emuNAND and allows you to make a full NAND dump without issue, while also leaving enough storage space for games and homebrew.
 
-**Q: Why is only Atmosphère and Hekate supported? What about SX OS and ReiNX?**{: #why-Atmosphère-hekate}
+**Q: Why is only Atmosphère and Hekate supported? What about SX OS and ReiNX?**{: #why-atmosphere-hekate}
 
 A: SX OS is unsupported as it's primary usecase is piracy, as well as stealing code from Atmosphère. In addition, SX OS has homebrew compatability issues with Atmosphère and Hekate which wont be supported.
 
