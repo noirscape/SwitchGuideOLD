@@ -38,9 +38,6 @@ If you are on Linux, install Python 3 using your package manager. On Ubuntu syst
 
 ### Making your bootkit
 
-When Hekate updates, download the Hekate zip again and do step 6 again.
-{: .info-box}
-
 1. Make a new folder called `bootkit`.
 2. In the `bootkit` folder, place `boot_macOS-Linux.sh`.
 3. In the `bootkit` folder, make a folder called `bin`.
