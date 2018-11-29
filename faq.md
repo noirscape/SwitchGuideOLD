@@ -17,6 +17,7 @@ Below you will find a list of commonly asked questions and answers.
   - [My switch won't boot after I select Atmosphère in hekate!](#sys-ftpd)
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
   - [What is the recommended microSD card size for Homebrew?](#recommended-size){: .a-table}
+  - [What filesystem should I use on my microSD card?](#filesystem)
   - [Why is only Atmosphère and Hekate supported?](#why-atmosphere-hekate){: .a-table}
   - [I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?](#reinx-sxos-earlier)
   - [You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?](#sx-not-so-nand){: .a-table}
@@ -72,6 +73,27 @@ A: This guide fully works on system version 6.1 and any version below.
 **Q: What is the recommend microSD card size for homebrew?**{: #recommended-size}
 
 A: The recommended size is 128GB. This will permit you to both have an emuNAND and allows you to make a full NAND dump without issue, while also leaving enough storage space for games and homebrew.
+
+**Q: What filesystem should I use on my microSD card?**{: #filesystem}
+
+A: It is highly advised to use FAT32. exFAT should only be used in case you want to restore a NAND dump. For detailed pro's and cons of each filesystem, see below.
+
+FAT32
+
+- Pro: Stable. Works with all homebrew.
+- Pro: Only filesystem switch-linux based projects support (such as Lakka.)
+- Con: Does not support files larger than 4GB.
+- Con: Needs external tools to format on 32GB+ devices on Windows.
+- Con: Cannot restore NAND dumps as a NAND dump is larger than 4GB.
+
+exFAT
+
+- Pro: Supports files larger than 4GB.
+- Pro: Needed to restore NAND dumps, only filesystem that can hold a complete NAND dump that does not need to be combined later.
+- Con: Highly unstable support. Very prone to corruption.
+- Con: Wonky homebrew support.
+- Con: Not supported at all by switch-linux.
+- Con: Needs an update installed by Nintendo before it can be used.
 
 **Q: Why is only Atmosphère and Hekate supported? What about SX OS and ReiNX?**{: #why-atmosphere-hekate}
 
