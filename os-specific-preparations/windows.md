@@ -27,9 +27,6 @@ You will only have to do these steps once for each device you want to launch CFW
 
 ### Making your bootkit
 
-When Hekate updates, download the Hekate zip again and do step 6 again.
-{: .info-box}
-
 1. Make a new folder called `bootkit`.
 2. In the `bootkit` folder, place `boot_cfw_win32.bat`, `boot_cfw_win64.bat`.
 3. In the `bootkit` folder, make a folder called `bin`.
