@@ -3,15 +3,12 @@ layout: default
 title: Dumping your BIS keys.
 ---
 
-You cannot currently get your BIS keys on any device running 6.2 or higher.
-{: .info-box}
-
 BIS keys are console-specific. It is not possible to use another consoles BIS keys. Do not share your BIS keys!
 {: .info-box}
 
-In this step we will dump your BIS keys. Your BIS keys are needed in case you accidentally update your NAND and wish to downgrade it later or if you want to extract files from your NAND dumps.
+In this step we will dump your BIS keys. Your BIS keys are needed in case you update your NAND to a version not supported by CFW (at the time of writing all firmware versions are supported by CFW) and wish to downgrade it later or if you want to extract files from your NAND dumps.
 
-## What you will need.
+## What you will need
 
 - The latest version of [biskeydump](https://switchtools.sshnuke.net/).
 

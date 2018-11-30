@@ -14,9 +14,8 @@ title: Setting up your SD card
 - [hekate_ipl.ini](https://noirscape.github.io/SwitchGuide/assets/hekate_ipl.ini) (use Ctrl-S or Apple key-S to save this file.) Make sure this file ends in `.ini` ! Some browsers might add `.txt` to the end of this filename. If your browser does this, remove the `.txt` extension! On Windows and macOS you might need to disable hiding extensions from files. To do so, [see this wikihow](https://www.wikihow.tech/Show-File-Extensions-on-Windows). On macOS, see [this iDownloadBlog page](https://www.idownloadblog.com/2014/10/29/how-to-show-or-hide-filename-extensions-in-os-x-yosemite/).
 - The latest release of [nx-hbloader](https://github.com/switchbrew/nx-hbloader/releases/latest){: .a-table}
 
-### Blocking updates
-
-You should follow these steps before following any of the other steps. This will block Nintendo's update servers. This is to prevent you from accidentally updating to 6.2 or higher.
+<!-- Below section to be uncommented whenever shit breaks on a FW update. -->
+<!-- ### Blocking updates
 
 1. Open the settings applet on your Switch.
 2. Go to `Internet` -> `Internet Settings`.
@@ -36,7 +35,7 @@ This is to remove a downloaded system update to prevent the update from nagging 
 1. Power off your Switch.
 2. Press Volume up + Volume down + Power at the same time until you see the Nintendo Switch logo appear.
 3. Your Switch will boot into Maintenance mode.
-4. Press the power button again to turn off your Switch.
+4. Press the power button again to turn off your Switch. -->
 
 ### Setting up your sd card
 

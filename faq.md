@@ -65,9 +65,9 @@ Users in European regions should go [here](https://accounts.nintendo.com/setting
 
 A: Make sure you _don't_ have `sys-ftpd.kip` in the `kips` directory. `sys-ftpd` does not work on firmware versions on or below 3.0.0.
 
-**Q: Does this guide work on 6.1**{: #can-i-run-on}
+**Q: Does this guide work on 6.2**{: #can-i-run-on}
 
-A: This guide fully works on system version 6.1 and any version below.
+A: This guide fully works on system version 6.2 and any version below.
 
 **Q: What is the recommend microSD card size for homebrew?**{: #recommended-size}
 
