@@ -12,7 +12,7 @@ Make sure to backup your NAND in a safe place.
 ### Dump your NAND.
 
 1. Boot your Switch into RCM and connect it to your PC, see [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
-2. Run the `boot_macOS-Linux.sh` script included in the bootkit folder.
+2. Run the `boot_Linux.sh` or `boot_macOS.command` script included in the bootkit folder.
 3. Use the volume and power buttons to select `Tools`, then select `Backup`.
 4. Use the volume and power buttons to select `Backup eMMC BOOT0/1`.
 5. Wait for the backup to complete. This should not take too long.
