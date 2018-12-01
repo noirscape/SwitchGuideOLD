@@ -33,7 +33,7 @@ If you are on Linux, install Python 3 using your package manager. On Ubuntu syst
 ### Installing pyusb
 
 1. Open a terminal window
-2. Run the following command. Enter your password when prompted: `sudo pip3 install pyusb`
+2. Run the following command. `python3 -m pip install --user pyusb`
 
 ### Making your bootkit
 
