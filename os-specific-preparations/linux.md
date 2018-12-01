@@ -10,7 +10,8 @@ You will only have to do these steps once for each device you want to launch CFW
 
 - The following files (use Ctrl-S or Apple key-S to save these):
   - [fusee-launcher.py](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py){: target="_blank" .a-table}
-  - [boot_macOS-Linux.sh](https://noirscape.github.io/SwitchGuide/assets/boot_macOS-Linux.sh){: target="_blank" .a-table}
+  - Linux: [boot_Linux.sh](https://noirscape.github.io/SwitchGuide/assets/boot_Linux.sh){: target="_blank" .a-table}
+  - macOS: [boot_macOS.command.zip](https://noirscape.github.io/SwitchGuide/assets/boot_macOS.command.zip){: target="_blank" .a-table}
 - [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
 - Python 3. This will be installed during the next steps, so no need to download anything.
 - `pyusb`. This will be installed during the next steps, so no need to download anything.
@@ -23,9 +24,7 @@ You will only have to do these steps once for each device you want to launch CFW
 2. Enter the following command: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 3. Enter your password when prompted.
 4. Enter the following command: `brew install python`.
-5. Enter your password if prompted.
-6. Enter the following command: `brew install libusb`.
-7. Enter your password if prompted.
+5. Enter the following command: `brew install libusb`.
 
 #### Linux users
 
