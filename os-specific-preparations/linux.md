@@ -38,10 +38,11 @@ If you are on Linux, install Python 3 using your package manager. On Ubuntu syst
 ### Making your bootkit
 
 1. Make a new folder called `bootkit`.
-2. In the `bootkit` folder, place `boot_macOS-Linux.sh`.
-3. In the `bootkit` folder, make a folder called `bin`.
-4. In the `bin` folder, place `fusee-launcher.py` and `intermezzo.bin`.
-5. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bin` folder and rename it to `payload.bin`.
+  - Linux: In the `bootkit` folder, place `boot_Linux.sh`.
+  - Mac: Extract `boot_macOS.command.zip`, and place `boot_macOS.command` in the `bootkit` folder.
+2. In the `bootkit` folder, make a folder called `bin`.
+3. In the `bin` folder, place `fusee-launcher.py` and `intermezzo.bin`.
+4. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bin` folder and rename it to `payload.bin`.
 
 [Continue to NAND dumping (macOS/Linux)]({{ '/nand-dump/linux.html' | relative_url }}){: .a-table}
 {: .info-box}
