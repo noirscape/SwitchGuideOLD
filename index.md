@@ -22,7 +22,7 @@ This guide will boot you into Atmosphère using a combination of the RCM, the He
 ### What you will need
 
 - A "first-generation" Switch. (All Switch consoles before July 2018 will work.) 
-    - If you are not sure about wether your Switch is a "first-generation" Switch, you can check [this thread](https://gbatemp.net/threads/switch-informations-by-serial-number.481215/). Match the first letters and numbers of your serial number to the list in the blue box. You can find your serial number using [these instructions by Nintendo](https://www.nintendo.com.au/how-to-find-the-serial-number-of-your-console). 
+    - If you are not sure about whether your Switch is a "first-generation" Switch, you can check [this thread](https://gbatemp.net/threads/switch-informations-by-serial-number.481215/). Match the first letters and numbers of your serial number to the list in the blue box. You can find your serial number using [these instructions by Nintendo](https://www.nintendo.com.au/how-to-find-the-serial-number-of-your-console). 
         - If your serial number is listed as green, you have a "first-generation" Switch and will be able to boot CFW. 
         - If your serial number is listed as orange, follow the guide, but you might not be able to boot CFW. 
         - If your serial number is listed as red, your Switch is patched and you will not be able to boot CFW.
