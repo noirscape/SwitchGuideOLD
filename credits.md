@@ -17,7 +17,7 @@ Special thanks go to all of the following people for making this guide possible:
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
   - SwitchBru for appstore-nx (provides SwitchGuide-Updater).
-- raizo#1337 for the domain name "switchguide.xyz".
+- [raizo](https://github.com/iraizo/){: .a-table} for the domain name "switchguide.xyz".
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
 Additional credits for the 1.0.0 RCM guide:
