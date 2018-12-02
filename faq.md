@@ -13,6 +13,7 @@ Below you will find a list of commonly asked questions and answers.
 - [Ban related](#ban){: .a-table}
   - [How do I prevent getting banned? What are some of the common causes for bans?](#prevent-ban){: .a-table}
   - [How does Nintendo ban my system?](#how-ban){: .a-table}
+  - [I want to prevent my Switch from connecting to Nintendo's servers!](#no-nintendo-network)
 - [Homebrew related](#homebrew){: .a-table}
   - [My switch won't boot after I select Atmosphère in hekate!](#sys-ftpd)
   - [Does this guide work on system version x?](#can-i-run-on){: .a-table}
@@ -56,11 +57,25 @@ A: Depends on the context. By far the majority of bans are due to the Switch's e
 
 Users in European regions should go [here](https://accounts.nintendo.com/setting){: .a-table target="_blank"}, click on the "Edit" button next to usage information and untick both options and click "Save changes". While this will not fully disable telemetry, it will disable the majority of it.
 
+**Q: I want to prevent my Switch from connecting to Nintendo's servers!**{: #no-nintendo-network}
+
+A: A program called 90DNS can be used to accomplish this. 90DNS blocks all Nintendo domains, except for the connection test domain, meaning that while your Switch will think it's online, it won't actually connect to Nintendo's servers. See below on how to set this up.
+
+1. Open the settings applet on your Switch.
+2. Go to `Internet` -> `Internet Settings`.
+3. You will see a list of all WiFi networks nearby and those you've ever been connected to.
+4. For each network you've been connected to, select it and choose `Change settings`
+5. Change `DNS` to `Manual`.
+6. Set the primary DNS server to `163.172.141.219`.
+7. Set the secondary DNS `45.248.48.62`.
+8. Press the save button and then `B` to return to the network list.
+9. Repeat steps 4 to 8 for all WiFi networks you've been connected to.
+10. Press the Home button to get back to the main menu.
+
 ---
 
 ## Homebrew related
 {: #homebrew}
-
 
 **Q: My switch won't boot after I select Atmosphère in hekate!**{: #sys-ftpd}
 
@@ -106,6 +121,7 @@ ReiNX on the other hand does not reimplement creport, which results in an increa
 A: If you've made a NAND backup before installing homebrew, restore it. This will remove the SX OS sysNAND "emuNAND". In addition, it will restore crash logs to their pristine state. If you have not done this, this should not matter, but it is advised you keep your Nintendo Switch offline to prevent it from being banned.
 
 To clean up ReiNX and SX OS from the SD card, it is advised to remove all folders except for the following:
+
 - `switch` This folder contains the homebrew applications you have installed.
 - `Nintendo` This folder contains all games that have been installed on your SD card.
 
