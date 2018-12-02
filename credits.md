@@ -21,6 +21,7 @@ Special thanks go to all of the following people for making this guide possible:
 - [eliboa](https://github.com/eliboa/TegraRcmGUI) for TegraRcmGUI
   - Flump#5913 for the build used in this guide (changes default favorites to point to Hekate).
 - [LavaTech](https://lavatech.top/) for 90DNS.
+- [ihaveamac](https://github.com/ihaveamac) for updating macOS instructions.
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
 Additional credits for the 1.0.0 RCM guide:
