@@ -10,7 +10,7 @@ You will only have to do these steps once for each device you want to launch CFW
 
 - The following files (use Ctrl-S or Apple key-S to save these):
   - [fusee-launcher.py](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/fusee-launcher.py){: target="_blank" .a-table}
-  - Linux: [boot_Linux.sh](https://noirscape.github.io/SwitchGuide/assets/boot_Linux.sh){: target="_blank" .a-table}
+  - Linux: [boot_Linux.sh.zip](https://noirscape.github.io/SwitchGuide/assets/boot_Linux.sh.zip){: target="_blank" .a-table}
   - macOS: [boot_macOS.command.zip](https://noirscape.github.io/SwitchGuide/assets/boot_macOS.command.zip){: target="_blank" .a-table}
 - [intermezzo.bin](https://github.com/Cease-and-DeSwitch/fusee-launcher/raw/master/intermezzo.bin){: .a-table}
 - Python 3. This will be installed during the next steps, so no need to download anything.
@@ -38,7 +38,7 @@ If you are on Linux, install Python 3 using your package manager. On Ubuntu syst
 ### Making your bootkit
 
 1. Make a new folder called `bootkit`.
-  - Linux: In the `bootkit` folder, place `boot_Linux.sh`.
+  - Linux: Extract `boot_Linux.zip`, and place `boot_Linux.sh` in the `bootkit` folder.
   - Mac: Extract `boot_macOS.command.zip`, and place `boot_macOS.command` in the `bootkit` folder.
 2. In the `bootkit` folder, make a folder called `bin`.
 3. In the `bin` folder, place `fusee-launcher.py` and `intermezzo.bin`.
