@@ -18,6 +18,9 @@ Special thanks go to all of the following people for making this guide possible:
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
   - SwitchBru for appstore-nx (provides SwitchGuide-Updater).
 - [raizo](https://github.com/iraizo/){: .a-table} for the domain name "switchguide.xyz".
+- [eliboa](https://github.com/eliboa/TegraRcmGUI) for TegraRcmGUI
+  - Flump#5913 for the build used in this guide (changes default favorites to point to Hekate).
+- [LavaTech](https://lavatech.top/) for 90DNS.
 - The helpers and staff of the Nintendo Homebrew discord for providing questions for the FAQ.
 
 Additional credits for the 1.0.0 RCM guide:
