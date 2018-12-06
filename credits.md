@@ -17,7 +17,7 @@ Special thanks go to all of the following people for making this guide possible:
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
   - SwitchBru for appstore-nx (provides SwitchGuide-Updater).
-- [raizo](https://github.com/iraizo/){: .a-table} for the domain name "switchguide.xyz".
+- [raizo](https://github.com/iraizo/) for the domain name "switchguide.xyz" and for the original NXBoot instructions.
 - [eliboa](https://github.com/eliboa/TegraRcmGUI) for TegraRcmGUI
   - [Flump](https://github.com/Flumpster) for the build used in this guide (changes default favorites to point to Hekate).
 - [LavaTech](https://lavatech.top/) for 90DNS.

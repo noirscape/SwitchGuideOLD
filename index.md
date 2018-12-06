@@ -28,9 +28,14 @@ This guide will boot you into Atmosphère using a combination of the RCM, the He
         - If your serial number is listed as red, your Switch is patched and you will not be able to boot CFW.
 - A way to put your Switch into RCM. See [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information. Users on 1.0.0 can also enter RCM from a software side by using a program called reboot_to_rcm. See [here](1-0-0.html){: target="_blank" .a-table} for more details.
 - A host PC running Windows, Linux, macOS or ChromeOS, or an Android device.
+  - While a jailbroken iOS device _can_ be used to launch CFW, it is not suited for initial setup.
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
 - If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.
 - A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update".)
+
+#### Note about iOS instructions
+
+You can use a jailbroken iPhone to launch CFW. That said, for initial setup, you need to use a different device. If you want to set up launching CFW from your iPhone later, follow the instructions at [OS Specific Preparations (iOS)](os-specific-preparations/ios.html).
 
 ### What are the advantages to running homebrew
 
