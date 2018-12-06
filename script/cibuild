@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+bundle exec jekyll build
+bundle exec htmlproofer --enforce-https --check-html --check-favicon --check-img-http --check-opengraph ./_site
