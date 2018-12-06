@@ -31,26 +31,30 @@ To keep track of new releases of Atmosphère and Hekate, I recommend subscribing
 4. Press `Update Atmosphere` or `Update Hekate` to update Atmosphère or Hekate respectively.
 5. To use the updated version of Atmosphère, reboot your Switch. You'll need to boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
 
-<!-- #### Updating Atmosphère
+### Changing the title the Homebrew Launcher uses
 
-1. [Download the latest release of Atmosphère](https://github.com/Atmosphère-NX/Atmosphère/releases/latest). Download both the zip file and `fusee-primary.bin`.
-2. Turn off your Switch and put your microSD card in your computer.
-3. Delete `fusee-primary.bin` and `fusee-secondary.bin` from the root your SD card.
-4. Copy `fusee-secondary.bin` from the Atmosphère zip to the root of your SD card.
-5. Copy `fusee-primary.bin` to the to the root of your SD card.
-6. Safely remove your microSD card and plug it back in your Switch.
-7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system.
+To do this, you need to have downloaded at least **1** game/application from the Nintendo eShop. If you have not done so, there are free games/applications available on the eShop. Which title you select does not matter, any will work.
+{: .info-box}
 
-### Updating Hekate
+In order to make use of some Homebrew, we need to give the Homebrew Launcher more memory. To do this, we need to run the Homebrew Launcher from an installed game on your Switch.
 
-1. [Download the latest release of Hekate](https://github.com/CTCaer/hekate/releases/latest).
-2. Turn off your Switch and put your microSD card in your computer.
-3. Open the `bootloader` folder on your SD card and if it exists, remove `update.bin`.
-4. From the Hekate zip, copy the file starting with `hekate_ctcaer` to the `bootloader` folder on your SD card.
-5. Open the `bootloader` folder on your SD card and rename the file starting with `hekate_ctcaer` to `update.bin`. 
-6. Safely remove your microSD card and plug it back in your Switch.
-7. Boot CFW again using the instructions at [Launching CFW](/launching-cfw/) for your system. -->
+#### What you will need
 
+- At least 1 installed game on your Switch.
+- The title ID of this game (can be found [here](https://switchbrew.org/wiki/Title_list/Games)). Look up the title of your game. The Title ID is the text in the column to the left.
+
+1. Turn off your Switch and put your SD card in your computer.
+2. Open the `atmosphere` folder on your SD card.
+3. Open the `loader.ini` file in Notepad (note: do **not** use Microsoft Word or Wordpad. Those are **not** suitable editors).
+4. Remove the text after `hbl_tid=`
+5. Put the Title ID of your game after `hbl_tid=`.
+6. Save the file.
+7. Put your SD card back in your Switch.
+8. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
+
+To launch the Homebrew menu from now on, you need to use this installed game. If you instead want to play the installed game, hold the `R` button while launching the game.
+
+If you want to change the game used to launch the Homebrew Launcher, just follow these steps again.
 
 ### What next?
 
