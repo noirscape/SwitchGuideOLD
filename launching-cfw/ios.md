@@ -3,7 +3,7 @@ layout: default
 title: Launching CFW (iOS)
 ---
 
-To set up iOS for launching CFW, you need to have a jailbroken device. Jailbreaking your iOS device is beyond the scope of this guide.
+To set up iOS for launching CFW, you need to have a jailbroken device, if you dont know how to jailbreak your ios device follow this [guide](https://jailbreakguide.tk/) or join the r/Jailbreak [Discord](https://discord.gg/jb)
 {: .info-box}
 
 ## Launch Hekate
