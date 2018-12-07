@@ -32,6 +32,9 @@ To set up iOS for launching CFW, you need to have a jailbroken device. Jailbreak
 12. Cydia will now install NXBoot.
 13. Press the black button on the bottom after it says that NXBoot was succesfully installed.
 
+If any errors show up please visit the r/jailbreak [Discord](https://discordapp.com/invite/jb){: target="_blank" .a-table}.
+{: .info-box}
+
 ## Uploading the Hekate payload to iCloud
 
 1. Download the latest release of Hekate [here](https://github.com/CTCaer/hekate/releases/latest) to your computer. Download the file starting with `hekate_ctcaer`.
