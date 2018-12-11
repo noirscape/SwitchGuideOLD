@@ -3,29 +3,41 @@ layout: default
 title: Dumping your BIS keys.
 ---
 
-BIS keys are console-specific. It is not possible to use another consoles BIS keys. Do not share your BIS keys!
+BIS keys are console-specific. Using another consoles BIS keys may result in a bricked system. Always use your own BIS keys.
 {: .info-box}
 
-In this step we will dump your BIS keys. Your BIS keys are needed in case you update your NAND to a version not supported by CFW (at the time of writing all firmware versions are supported by CFW) and wish to downgrade it later or if you want to extract files from your NAND dumps.
+Sharing your keys is considered piracy.
+{: .info-box}
 
-## What you will need
+In this step we will dump your keys. You need these keys to decrypt NCAs and your NAND. Being able to decrypt your NAND is essential in case you ever need to downgrade your Nintendo Switch to a lower version.
 
-- The latest version of [biskeydump](https://switchtools.sshnuke.net/).
+## Dumping your TSEC and fuses
 
-## Dumping your BIS keys
+1. Power off your Switch.
+2. Follow the instructions at [Launching CFW](/launching-cfw/) for your system, but stop at the point where it tells you to launch Atmosphere.
+3. Use the volume and power buttons to select `Console info...`.
+4. Use the volume and power buttons to select `Print fuse info`. (Note: **fuse** info, not **kfuse** info!)
+5. Press the power button twice.
+6. Use the volume and power buttons to select `Print TSEC keys`.
+7. Press the power button twice.
+8. Select `Back`.
+9. Select `Launch` -> `Atmosphere`.
 
-1. Turn off your switch and put your SD card in your computer.
-2. From the biskeydump zip, extract `biskeydump.bin`.
-3. Copy `biskeydump.bin` to the `payloads` folder in the `bootloader` folder on your SD card.
-4. Plug your SD card back in your Switch.
-5. Launch Hekate using the steps at [Launching CFW](/launching-cfw/). Stop at the step where it tells you to launch Atmosphère.
-6. Go to `Launch` -> `Payloads` -> `biskeydump.bin`.
-7. Wait a few seconds and your BIS keys should appear on top of the screen, as well as a QR code.
-8. Scan the QR code using your phone.
-9. You now have your BIS keys on your phone's clipboard.
-10. Store these BIS keys in a safe place.
-11. Power off your Switch by holding the power button for ~10 seconds.
-12. You can launch CFW again using the instructions under [Launching CFW](/launching-cfw/).
+## Installing lockpick
+
+1. Open the Homebrew Launcher.
+2. Open `hb App Store` through the Homebrew Launcher.
+3. Look for the program called `Lockpick` and use the arrow buttons to select it.
+4. Press `A` to view the detail menu.
+5. Press `A` to download Lockpick.
+6. Press the home button.
+
+## Dumping keys
+
+1. Open the Homebrew Launcher.
+2. Open `Lockpick` through the Homebrew Launcher.
+3. Press `+`.
+4. On the root of your SD card should now be a file called `prod.keys`. Put this file in a safe location as it contains your device keys.
 
 You should read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table}.
 {: .info-box}

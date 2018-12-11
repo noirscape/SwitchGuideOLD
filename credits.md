@@ -16,6 +16,7 @@ Special thanks go to all of the following people for making this guide possible:
   - [yellows8](https://github.com/yellows8){: .a-table} and SwitchBrew for the Homebrew Launcher and nx-hbloader.
   - [Rajkosto](https://github.com/rajkosto){: .a-table} for TegraRCMSmash.
   - [TomGER](https://github.com/tumGER){: .a-table} for the compiled build of nx-hbloader.
+  - [shchmue](https://github.com/shchmue) for Lockpick.
   - SwitchBru for appstore-nx (provides SwitchGuide-Updater).
 - [raizo](https://github.com/iraizo/){: .a-table} for the domain name "switchguide.xyz".
 - [eliboa](https://github.com/eliboa/TegraRcmGUI) for TegraRcmGUI
