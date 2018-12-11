@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dumping your BIS keys.
+title: Dumping your console keys.
 ---
 
 BIS keys are console-specific. Using another consoles BIS keys may result in a bricked system. Always use your own BIS keys.
