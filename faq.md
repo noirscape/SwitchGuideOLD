@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: FAQ
 ---
@@ -21,7 +21,7 @@ Below you will find a list of commonly asked questions and answers.
   - [What filesystem should I use on my microSD card?](#filesystem)
   - [Why is only Atmosphère and Hekate supported?](#why-atmosphere-hekate){: .a-table}
   - [I used SX OS/ReiNX and I want to use this setup instead. Do I need to do anything specific?](#reinx-sxos-earlier)
-  - [You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?](#sx-not-so-nand){: .a-table}
+  - [My homebrew applications are not showing up!](#archive-bit)
 
 ## RCM related
 {: #rcm}
@@ -131,11 +131,18 @@ The same should go for users of the "SDFiles"/"Kosmos" or similar setups.
 
 Note: You will lose your SX OS SD card emuNAND.
 
-**Q: You say emuNAND will resolve all these issues, but SX OS offers an emuNAND already. Why can't I just use that one?**{: #sx-not-so-nand}
+**Q: My homebrew applications are not showing up!**{: #archive-bit}
 
-A: SX OS's emuNAND has the issue that it is done with files that are mounted on the SD cards filesystem. What this means is that if your SD cards filesystem corrupts (which is inevitable, especially if youre using exFAT), you risk bricking this emuNAND as the files that this solution uses are at risk of being corrupted whenever the SD corrupts.
+A: First, these instructions only count if you can launch the Homebrew Launcher, but no applications show up. If you cannot launch the Homebrew Launcher, you have a different issue.
 
-A proper emuNAND solution (which is being worked on) would reserve free portions on the SD card and use those instead. This would mean that if the SD cards filesystem corrupts, your emuNAND would remain untouched.
+Try unsetting the archive bit in Hekate.
+
+1. Launch Hekate using the instructions at [Launching CFW](/launching-cfw/) but stop at the point where it instructs you to launch Atmosphere.
+2. Go to `Tools` -> `Unset archive bit (entire SD card)` using the power buttons.
+3. Wait for Hekate to finish, then press power.
+4. Go `Back` and go to `Launch` -> `Atmosphere` to boot Atmosphere.
+
+This problem occurs if you copy files to your SD card if you are on macOS. macOS enables the archive bit on these files by default, which the Switch cannot read properly.
 
 ---
 
