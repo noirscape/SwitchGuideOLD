@@ -38,7 +38,7 @@ In this step we will dump your keys. You need these keys to decrypt NCAs and you
 1. Open the Homebrew Launcher.
 2. Open `Lockpick` through the Homebrew Launcher.
 3. Press `+`.
-4. On the root of your SD card should now be a file called `prod.keys`. Put this file in a safe location as it contains your device keys.
+4. In the `switch` folder should now be a file called `prod.keys`. Put this file in a safe location as it contains your device keys.
 
 You should read the [Final Notes]({{ '/finalizing.html' | relative_url }}){: .a-table}.
 {: .info-box}
