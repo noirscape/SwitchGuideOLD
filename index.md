@@ -17,7 +17,7 @@ If you need assistance, visit us on [Discord](https://discord.gg/C29hYvh){: targ
 
 ### What are we doing to run homebrew on the Switch
 
-This guide will boot you into Atmosphère using a combination of the RCM, the Hekate bootloader and Atmosphère CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions up until 6.1. Certain applications may not work on certain firmware versions so YMMV.
+This guide will boot you into Atmosphère using a combination of the RCM, the Hekate bootloader and Atmosphère CFW. In addition, this guide will enable an FTP server on your Switch to simplify transferring files while in Horizon. You will also be able to access the Homebrew menu by launching the album applet. This has only been tested from firmware 5.0.2 upwards, but theoretically should work on all firmware versions. Certain applications may not work on certain firmware versions so YMMV.
 
 ### What you will need
 
