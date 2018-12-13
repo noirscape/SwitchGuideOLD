@@ -10,7 +10,7 @@ You will only have to do these steps once for each device you want to launch CFW
 
 - [TegraRcmGUI.zip](https://noirscape.github.io/SwitchGuide/assets/TegraRcmGUI.zip)
 
-### Setting up TegaRcmGUI
+### Setting up TegraRcmGUI
 
 1. Make a new folder called `bootkit`.
 2. Extract the contents of `TegraRcmGUI.zip` to this folder.
