@@ -21,7 +21,7 @@ In this step we will dump your keys. You need these keys to decrypt NCAs and you
 6. Use the volume and power buttons to select `Print TSEC keys`.
 7. Press the power button twice.
 8. Select `Back`.
-9. Select `Poweroff (RCM)`. This will make your Switch power on in RCM mode automatically on the next boot.
+9. Select `Reboot (RCM)`. This will make your Switch power on in RCM mode automatically on the next boot.
 10. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
 
 ## Installing lockpick
