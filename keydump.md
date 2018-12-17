@@ -11,6 +11,10 @@ Sharing your keys is considered piracy.
 
 In this step we will dump your keys. You need these keys to decrypt NCAs and your NAND. Being able to decrypt your NAND is essential in case you ever need to downgrade your Nintendo Switch to a lower version.
 
+## What you will need
+
+- The latest version of [Lockpick](https://github.com/shchmue/Lockpick/releases).
+
 ## Dumping your TSEC and fuses
 
 1. Power off your Switch.
@@ -24,14 +28,13 @@ In this step we will dump your keys. You need these keys to decrypt NCAs and you
 9. Select `Reboot (RCM)`. This will make your Switch power on in RCM mode automatically on the next boot.
 10. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
 
-## Installing lockpick
+## Installing Lockpick
 
-1. Open the Homebrew Launcher.
-2. Open `hb App Store` through the Homebrew Launcher.
-3. Look for the program called `Lockpick` and use the arrow buttons to select it.
-4. Press `A` to view the detail menu.
-5. Press `A` to download Lockpick.
-6. Press the home button.
+1. Turn off your Switch and put your SD card in your computer.
+2. Open the `switch` folder on your SD card.
+3. Copy `lockpick.nro`from the `lockpick` release to the `switch` folder.
+4. Put your SD card back in your Switch.
+5. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
 
 ## Dumping keys
 

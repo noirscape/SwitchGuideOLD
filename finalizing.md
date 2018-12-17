@@ -43,6 +43,8 @@ In order to make use of some Homebrew, we need to give the Homebrew Launcher mor
 - At least 1 installed game on your Switch.
 - The title ID of this game (can be found [here](https://switchbrew.org/wiki/Title_list/Games)). Look up the title of your game. The Title ID is the text in the column to the left.
 
+#### Changing the title
+
 1. Turn off your Switch and put your SD card in your computer.
 2. Open the `atmosphere` folder on your SD card.
 3. Open the `loader.ini` file in Notepad (note: do **not** use Microsoft Word or Wordpad. Those are **not** suitable editors).
