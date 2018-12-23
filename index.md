@@ -33,6 +33,8 @@ This guide will boot you into Atmosphère using a combination of the RCM, the He
 - A USB Type-C to USB-A cable, or a USB Type-C to USB Type-C cable. (Depending on what your host PC supports.)
 - If you are using an Android device, you need a way to connect the Switch to it, either a USB OTG cable, or USB-C to USB-C cable depending on what your device supports.
 - A microSD card 2GB or larger, formatted to either FAT32, or exFAT (only if your switch has the exFAT support "update".)
+  - The recommended SD card size is 128GB. This will allow you both store a NAND dump and make an emuNAND later on.
+  - The recommended filesystem is FAT32. exFAT has issues with Homebrew due to filesystem corruption. exFAT SD cards can also not be used to run Lakka or other switch-linux implementations.
 
 ### What are the advantages to running homebrew
 
