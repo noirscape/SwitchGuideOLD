@@ -3,8 +3,7 @@ layout: default
 title: OS-Specific preparations (macOS/Linux)
 ---
 
-You will only have to do these steps once for each device you want to launch CFW from.
-{: .info-box}
+{%include os-specific-preparations-infobox.md %}
 
 ### What you will need
 

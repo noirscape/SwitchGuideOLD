@@ -3,8 +3,7 @@ layout: default
 title: Launching CFW (macOS/Linux)
 ---
 
-You will have to do these steps each time you want to boot into CFW.
-{: .info-box}
+{%include launch-cfw.md %}
 
 ### Launch Hekate
 
