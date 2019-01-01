@@ -15,26 +15,24 @@ In this step we will dump your keys. You need these keys to decrypt NCAs and you
 
 - The latest version of [Lockpick](https://github.com/shchmue/Lockpick/releases).
 
-## Dumping your TSEC and fuses
-
-1. Power off your Switch.
-2. Follow the instructions at [Launching CFW](/launching-cfw/) for your system, but stop at the point where it tells you to launch Atmosphere.
-3. Use the volume and power buttons to select `Console info...`.
-4. Use the volume and power buttons to select `Print fuse info`. (Note: **fuse** info, not **kfuse** info!)
-5. Press the power button twice.
-6. Use the volume and power buttons to select `Print TSEC keys`.
-7. Press the power button twice.
-8. Select `Back`.
-9. Select `Reboot (RCM)`. This will make your Switch power on in RCM mode automatically on the next boot.
-10. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
-
 ## Installing Lockpick
 
 1. Turn off your Switch and put your SD card in your computer.
 2. Open the `switch` folder on your SD card.
-3. Copy `lockpick.nro`from the `lockpick` release to the `switch` folder.
+3. Copy `lockpick.nro` from the `lockpick` release to the `switch` folder.
 4. Put your SD card back in your Switch.
-5. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
+
+## Dumping your TSEC and fuses
+
+1. Follow the instructions at [Launching CFW](/launching-cfw/) for your system, but stop at the point where it tells you to launch Atmosphere.
+2. Use the volume and power buttons to select `Console info...`.
+3. Use the volume and power buttons to select `Print fuse info`. (Note: **fuse** info, not **kfuse** info!)
+4. Press the power button twice.
+5. Use the volume and power buttons to select `Print TSEC keys`.
+6. Press the power button twice.
+7. Select `Back`.
+8. Select `Reboot (RCM)`. This will make your Switch power on in RCM mode automatically on the next boot.
+9. Follow the instructions at [Launching CFW](/launching-cfw/) for your system.
 
 ## Dumping keys
 
