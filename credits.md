@@ -8,7 +8,7 @@ Special thanks go to all of the following people for making this guide possible:
 - [Jisagi](https://github.com/jisagi){: .a-table} and [ZetaDesigns](https://github.com/ZetaDesigns){: .a-table}, base layout.
 - [T3CHNOLOG1C](https://github.com/T3CHNOLOG1C){: .a-table}. Original guide, of which this guide uses pieces.
   - Brian Gilbert for the original macOS and Linux instructions.
-- [xGhostBoyx](https://github.com/xGhostBoyx){: .a-table}. Maintainer of the linked RCM guide.
+- [xGhostBoyx](https://github.com/xGhostBoyx){: .a-table}. Writer of the linked RCM guide.
 - The developers for the following tools and utilities:
   - [CTCaer](https://github.com/ctcaer){: .a-table} for Hekate.
   - [The Atmosphère-NX organization](https://github.com/Atmosphere-NX){: .a-table} for Atmosphère.

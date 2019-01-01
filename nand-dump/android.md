@@ -11,7 +11,7 @@ Make sure to backup your NAND in a safe place.
 
 ### Dump your NAND.
 
-1. Boot your Switch into RCM and connect it to your device, see [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
+1. Boot your Switch into RCM and connect it to your device, see [this guide](https://noirscape.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
 2. Go to [this website](https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html){: .a-table target="_blank"}.
 3. Under the Payload section, select upload payload and upload the .bin file you previously downloaded.
 4. Click `do the thing`, select `APX` and click connect.</li>

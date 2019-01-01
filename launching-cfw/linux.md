@@ -8,7 +8,7 @@ You will have to do these steps each time you want to boot into CFW.
 
 ### Launch Hekate
 
-1. Boot your Switch into RCM and connect it to your PC, see [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
+1. Boot your Switch into RCM and connect it to your PC, see [this guide](https://noirscape.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
 2. Run the `boot_Linux.sh` or `boot_macOS.command` script included in the bootkit folder.
 
 ### Launch Atmosphère

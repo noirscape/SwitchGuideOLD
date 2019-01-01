@@ -8,7 +8,7 @@ You will have to do these steps each time you want to boot into CFW.
 
 ### Launch Hekate
 
-1. Boot your Switch into RCM and connect it to your PC, see [this guide](https://xghostboyx.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
+1. Boot your Switch into RCM and connect it to your PC, see [this guide](https://noirscape.github.io/RCM-Guide){: target="_blank" .a-table} for more information on RCM.
 2. Run `TegraRcmGUI.exe` from your bootkit folder.
 3. Make sure the icon in the bottom left says `RCM OK`.
 4. Double click on the first entry in the favorites list to launch Hekate.
