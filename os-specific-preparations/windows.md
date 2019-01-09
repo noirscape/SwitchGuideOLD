@@ -7,7 +7,7 @@ title: OS-Specific preparations (Windows)
 
 ### What you will need
 
-- [TegraRcmGUI.zip](https://noirscape.github.io/SwitchGuide/assets/TegraRcmGUI.zip)
+- [TegraRcmGUI.zip](https://noirscape.github.io/SwitchGuideNHGuideLayout/assets/TegraRcmGUI.zip)
 
 ### Setting up TegraRcmGUI
 
